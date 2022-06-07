@@ -28,6 +28,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
 
   <body>
@@ -104,10 +106,11 @@
     <!-- Second Section -->
     <section class="section2">
       <h3 class="section2__text">
-        Elige el programa que más se adecue a tus habilidades
+        Elige el programa que más se adecue a tus habilidades 
       </h3>
       <h2 class="section2__subtitle">¡Sumate a Mh Academia!</h2>
-      <div class="section2__cards">
+      <div class="section2__cards" data-aos="fade-up"
+      data-aos-duration="3000" data-aos-once="true" >
         <div class="section2__card1">
           <img
             class="card1__image"
@@ -115,7 +118,6 @@
             alt="escuelitaDeTenisGrupoNiños"
           />
           <p class="card1__text">Escuelita de Tenis</p>
-          <input class="card__bottom" type="button" value="VER" name="" id="" />
         </div>
 
         <div class="section2__card2">
@@ -125,7 +127,6 @@
             alt="grupoDeAdultos"
           />
           <p class="card2__text">Grupo de Adultos</p>
-          <input class="card__bottom" type="button" value="VER" name="" id="" />
         </div>
       </div>
     </section>
@@ -133,7 +134,10 @@
     <!-- Third Section -->
     <section class="section3">
       <h2 class="section3__subtitle">Nuestros Coaches</h2>
-      <div class="section3__cards">
+      <div class="section3__cards" data-aos="fade-down"
+      data-aos-easing="linear"
+      data-aos-duration="1500"
+      data-aos-once="true">
         <div class="section3__card section3__card1">
           <img
             class="cardTeacher1__image"
@@ -233,5 +237,8 @@
         </div>
       </aside>
     </footer>
+    <script>
+      AOS.init();
+    </script
   </body>
 </html>

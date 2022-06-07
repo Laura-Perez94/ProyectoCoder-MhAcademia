@@ -38,23 +38,36 @@
   justify-self: flex-start;
 }
 .item2 {
+  margin-left: 2rem;
   grid-column: 2/3;
+  width: 100%;
 }
 .item3 {
+  margin-left: 2rem;
   grid-column: 3/4;
+  width: 100%;
 }
 .item4 {
+  margin-left: 2rem;
   grid-column: 4/5;
+  width: 100%;
 }
 .item5 {
+  margin-left: 2rem;
   grid-column: 5/6;
+  width: 100%;
 }
+
 .header__list {
   display: flex;
   flex-direction: row;
 }
 .header__item {
   list-style: none;
+  transition: all 3s;
+}
+.header__item:hover {
+  height: 50%;
 }
 .header__link {
   text-decoration: none;
@@ -83,7 +96,6 @@
 }
 
 /* Page: Index - Main Section */
-
 .mainIndex__img {
   background-size: cover;
   height: 63vh;
@@ -126,6 +138,14 @@
   text-align: center;
   padding-bottom: 4rem;
   height: 100vh;
+  background: rgb(241, 214, 182);
+  background: rgb(242, 224, 202);
+  background: radial-gradient(
+    circle,
+    rgba(242, 224, 202, 0.08476894175639005) 17%,
+    rgba(244, 192, 120, 0.13238798937543772) 56%,
+    rgba(241, 201, 145, 0.3144608185070903) 96%
+  );
 }
 .section__subtitle {
   font-size: 2.5rem;
@@ -154,7 +174,7 @@
 }
 .card__image {
   width: 50vh;
-  background-color: rgb(34, 82, 34);
+  background-color: rgb(5, 51, 5);
   padding: 0.5rem;
   margin-bottom: 0.5rem;
 }
@@ -165,8 +185,8 @@
 .card__description {
   font-size: 1.5rem;
   padding: 0.3rem;
-  color: #f09d66;
-  border: solid 0.1rem #f09d66;
+  color: rgb(34, 82, 34);
+  border: solid 0.1rem rgb(19, 60, 19);
   font-weight: lighter;
 }
 
@@ -193,6 +213,14 @@
   padding: 4rem 3rem;
   row-gap: 2rem;
   column-gap: 3rem;
+  background: rgb(210, 123, 17);
+  background: radial-gradient(
+    circle,
+    rgba(210, 123, 17, 0.5049370089832808) 34%,
+    rgba(218, 173, 118, 0.6337885495995272) 69%,
+    rgba(231, 206, 175, 0.8242647400757178) 91%
+  );
+  margin-top: -2;
 }
 .main__text {
   color: rgb(34, 53, 34);
@@ -230,7 +258,13 @@
 .section2 {
   font-family: "Racing Sans One";
   color: rgb(34, 53, 34);
-  padding-bottom: 4rem;
+  padding-bottom: 6rem;
+  background: radial-gradient(
+    circle,
+    rgba(242, 224, 202, 0.08476894175639005) 17%,
+    rgba(244, 192, 120, 0.13238798937543772) 56%,
+    rgba(241, 201, 145, 0.3144608185070903) 96%
+  );
 }
 .section2__text {
   font-size: 1.5rem;
@@ -246,7 +280,7 @@
   grid-template-columns: repeat(2, 1fr);
   column-gap: 6rem;
   padding: 0.5rem;
-  margin: 0rem 6rem;
+  margin: 2rem 6rem 0rem 6rem;
   align-content: space-between;
 }
 
@@ -256,7 +290,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: solid 0.2rem rgb(34, 53, 34);
   padding: 1rem 0rem;
 }
 .card1__image {
@@ -266,9 +299,11 @@
 .card1__text {
   font-size: 1.2rem;
   font-weight: lighter;
-  background-color: rgba(246, 193, 96, 0.4);
+  background-color: rgba(245, 199, 113, 0.927);
   padding: 1rem;
   margin-top: 0.5rem;
+  position: absolute;
+  top: 24rem;
 }
 
 .section2__card2 {
@@ -277,7 +312,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: solid 0.2rem rgb(34, 53, 34);
   padding: 1rem 0rem;
 }
 .card2__image {
@@ -288,19 +322,11 @@
   font-size: 1.2rem;
   font-weight: lighter;
   text-align: center;
-  background-color: rgba(246, 193, 96, 0.4);
+  background-color: rgba(245, 199, 113, 0.927);
   padding: 1rem;
   margin-top: 0.5rem;
-}
-.card__bottom {
   position: absolute;
-  top: 50%;
-  text-align: center;
-  font-family: "Racing Sans One";
-  color: rgb(34, 53, 34);
-  font-size: 1rem;
-  padding: 0.4rem 2rem;
-  background-color: rgba(246, 194, 96, 0.818);
+  top: 24rem;
 }
 
 /* Page: Academia - Third Section */
@@ -310,6 +336,12 @@
   color: rgb(34, 53, 34);
   padding: 4rem;
   margin-bottom: 2rem;
+  background: radial-gradient(
+    circle,
+    rgba(242, 224, 202, 0.08476894175639005) 17%,
+    rgba(244, 192, 120, 0.13238798937543772) 56%,
+    rgba(241, 201, 145, 0.3144608185070903) 96%
+  );
 }
 .section3__subtitle {
   font-size: 2.3rem;
@@ -370,6 +402,17 @@
   display: grid;
   grid-template-columns: 2fr 1fr;
   padding: 2rem;
+  background: rgb(2, 0, 36);
+  background: rgb(0, 36, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 36, 0, 0.6561975131849616) 9%,
+    rgba(14, 97, 5, 0.5805672610841212) 41%,
+    rgba(69, 134, 96, 0.5777661406359419) 68%,
+    rgba(80, 142, 115, 0.5553571770505077) 86%,
+    rgba(95, 140, 115, 0.36207986612613796) 98%
+  );
+  margin-top: -2rem;
 }
 
 .footer__sedes {
@@ -392,6 +435,10 @@
 .maps__link {
   height: 7rem;
   width: 15rem;
+}
+.maps__link:hover {
+  width: 20rem;
+  height: 8rem;
 }
 
 .footer__aside {

@@ -34,13 +34,15 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
   <body>
     <!-- HEADER -->
     <header class="header headerIndex">
       <img class="headerIndex__img" src="./assets/imagenes/portada 2.1.jpg" alt="" />
       <div class="header__logo">
-        <a href="../index.html"><img class="header__favicon" src="./assets/favicon/android-icon-192x192.png" alt="logoMhAcademia"
+        <a href=""><img class="header__favicon" src="./assets/favicon/android-icon-192x192.png" alt="logoMhAcademia"
       /></a>
       <!-- NAVBAR -->
       <nav>
@@ -71,7 +73,7 @@
       <img class="mainIndex__img" src="./assets/imagenes/foto_fondo_polvo_ladrillo.jpg" alt="">
       <div class="mainIndex__information">
         <h1 class="mainIndex__title">MH Academia de Tenis</h1>
-        <h3 class="mainIndex__text">
+        <h3 class="mainIndex__text" data-aos="zoom-in">
           MH es una <i>academia intengral</i>, que abre sus puertas tanto a
           <br />
           niños como adultos de todas las edades, <br />
@@ -82,7 +84,10 @@
     <!-- NEWS SECTION -->
     <section class="section sectionIndex">
       <h2 class="section__subtitle">Últimos Eventos y Novedades</h2>
-      <div class="section__card">
+      <div class="section__card" data-aos="fade-down"
+      data-aos-easing="linear"
+      data-aos-duration="1500"
+      data-aos-once="true">
 
         <div class="card__news card__news1">
           <img
@@ -182,5 +187,8 @@
         </div>
       </aside>
     </footer>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
