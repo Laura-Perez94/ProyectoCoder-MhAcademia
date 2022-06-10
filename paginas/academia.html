@@ -5,6 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Academia</title>
+    <!-- link bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <!-- links favicon -->
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -23,95 +31,136 @@
       href="../favicon/favicon-16x16.png"
     />
     <link rel="manifest" href="../favicon/site.webmanifest" />
+    <!-- link fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600&family=Inter:wght@200;300;400;500&family=Josefin+Sans:ital,wght@0,400;0,600;0,700;1,300;1,400&family=Pathway+Gothic+One&family=Racing+Sans+One&family=Roboto:wght@300;400;700&family=Staatliches&display=swap"
       rel="stylesheet"
     />
+    <!-- link Style.css -->
     <link rel="stylesheet" href="../css/style.css" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- link libreria AOS (ANIMACIONES) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
 
   <body>
     <!-- HEADER -->
-    <header class="header header__pages">
-      <img
-        class="header__image"
-        src="../assets/imagenes/portada 2.jpg"
-        alt="fotoPortada"
-      />
-      <div class="header__logo">
-        <a href="../index.html"><img class="header__favicon" src="../assets/favicon/android-icon-192x192.png" alt="logoMhAcademia"
-      /></a>
-      <!-- NAVBAR -->
-      <nav>
-        <ul class="nav__pages">
-          <li class="header__item item1">
-            <a class="header__link--bigger" href="../index.html">
-            Academia <br />
-            de Tenis</a>
-          </li>
-          <li class="header__item item2">
-            <a class="header__link" href="../index.html">Inicio</a>
-          </li>
-          <li class="header__item item3">
-            <a class="header__link" href="../paginas/sedes.html">Sedes</a>
-          </li>
-          <li class="header__item item4">
-            <a class="header__link" href="../paginas/store.html">Store</a>
-          </li>
-          <li class="header__item item5">
-            <a class="header__link" href="../paginas/contacto.html">Contacto</a>
-          </li>
-        </ul>
-      </nav>
-      <h1 class="header__title">Nuestra Academia</h1>
+    <header class="header__pages">
+      <div class="headerPages__container">
+        <!-- NAVBAR -->
+        <nav
+          class="navbar navbar-expand-lg"
+          style="background-color: rgba(243, 215, 201, 0.227)"
+        >
+          <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+              <img
+                src="../assets/imagenes/MhLogo sin fondo.png"
+                alt="logo Mh Academia"
+                width="70"
+                height="70"
+                class="d-inline-block align-text"
+              />
+              ACADEMIA DE TENIS
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="../index.html"
+                    >Inicio</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./paginas/sedes.html">Sedes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./paginas/store.html">Store</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../paginas/contacto.html"
+                    >Contacto</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <h1 class="header__title">Nuestra Academia</h1>
+      </div>
     </header>
+
     <!-- MAIN SECTION -->
     <main class="academia__main">
-      <div class="main__texts mainText1">
-        <p class="main__text">
-          Liderado por el profesor <b>Maximiliano Heredia</b>, <br />
-          quien en conjunto con su equipo de entrenadores, <br />
-          son capaces de maximizar <br />
-          las fortalezas de nuestros alumnos.
-        </p>
-      </div>
+      <div class="academa__main container">
+        <div class="row">
+          <div
+            class="col-lg-8 d-flex flex-column align-items-center justify-content-center"
+          >
+            <div class="main__texts">
+              <p class="main__text">
+                Liderado por el profesor <b>Maximiliano Heredia</b>, <br />
+                quien en conjunto con su equipo de entrenadores, <br />
+                son capaces de maximizar <br />
+                las fortalezas de nuestros alumnos.
+              </p>
+            </div>
 
-      <div class="main__texts mainText2">
-        <p class="main__text">
-          Nuestra base fundamental <br />
-          es la <b>formación integral</b> <br />
-          a través de la práctica del tenis.
-        </p>
-      </div>
+            <div class="main__texts">
+              <p class="main__text">
+                Nuestra base fundamental <br />
+                es la <b>formación integral</b> <br />
+                a través de la práctica del tenis.
+              </p>
+            </div>
 
-      <div class="main__texts mainText3">
-        <p class="main__text">
-          Nuestro objetivo es educar a las personas a través del deporte, <br />
-          inicidiendo positivamente en el desarrollo de cada uno de nuestros
-          alumnos.
-        </p>
-      </div>
-
-      <div class="mainImage">
-        <img
-          class="mainAcademia__image"
-          src="../assets/imagenes/Profe Maxi-formal.jpg"
-          alt="foto Profesor Maximiliano"
-        />
+            <div class="main__texts mainText3">
+              <p class="main__text">
+                Nuestro objetivo es educar a las personas a través del deporte,
+                <br />
+                inicidiendo positivamente en el desarrollo de cada uno de
+                nuestros alumnos.
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-lg-4 d-flex flex-column align-items-center justify-content-center"
+          >
+            <div class="mainImage">
+              <img
+                class="mainAcademia__image"
+                src="../assets/imagenes/Profe Maxi-formal.jpg"
+                alt="foto Profesor Maximiliano"
+              />
+            </div>
+          </div>
+        </div>
       </div>
     </main>
-    <hr />
+
     <!-- Second Section -->
     <section class="section2">
       <h3 class="section2__text">
-        Elige el programa que más se adecue a tus habilidades 
+        Elige el programa que más se adecue a tus habilidades
       </h3>
       <h2 class="section2__subtitle">¡Sumate a Mh Academia!</h2>
-      <div class="section2__cards" data-aos="fade-up"
-      data-aos-duration="3000" data-aos-once="true" >
-        <div class="section2__card1">
+      <div class="container">
+        <div class="row section2__cards" 
+        data-aos="fade-up"
+        data-aos-duration="3000"
+        data-aos-once="true">
+
+        <div class="section2__card1 col-xl-6 d-flex flex-column align-items-center justify-content-center">
           <img
             class="card1__image"
             src="../assets/imagenes/encuentro 3.jpg"
@@ -120,7 +169,7 @@
           <p class="card1__text">Escuelita de Tenis</p>
         </div>
 
-        <div class="section2__card2">
+        <div class="section2__card2 col-xl-6 d-flex flex-column align-items-center justify-content-center">
           <img
             class="card2__image"
             src="../assets/imagenes/adultos 1.jpg"
@@ -129,116 +178,124 @@
           <p class="card2__text">Grupo de Adultos</p>
         </div>
       </div>
+    </div>
+  </div>
     </section>
     <hr />
     <!-- Third Section -->
     <section class="section3">
       <h2 class="section3__subtitle">Nuestros Coaches</h2>
-      <div class="section3__cards" data-aos="fade-down"
-      data-aos-easing="linear"
-      data-aos-duration="1500"
-      data-aos-once="true">
-        <div class="section3__card section3__card1">
+      <div class="container">
+        <div
+        class="row section3__cards"
+        data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500"
+        data-aos-once="true"
+        >
+        <div class="section3__card col-md-4 d-flex flex-column align-items-center justify-content-center">
           <img
-            class="cardTeacher1__image"
+            class="cardTeacher1__image img-fluid"
             src="../assets/imagenes/profe maxi editado.png"
             alt="profesorMaximiliano"
-          />
-          <p class="cardTeacher__text">Profesor Maximiliano Heredia</p>
-          <p class="cardTeacher__text">30 años</p>
+            />
+            <p class="cardTeacher__text">Profesor Maximiliano Heredia</p>
+            <p class="cardTeacher__text">30 años</p>
         </div>
-        <div class="section3__card section3__card2">
+
+        <div class="section3__card col-md-4 d-flex flex-column align-items-center justify-content-center">
           <img
-            class="cardTeacher2__image"
+            class="cardTeacher2__image img-fluid"
             src="../assets/imagenes/profe Tomi Masjoan.jpg"
             alt="profesorTomasMasjoan"
-          />
-          <p class="cardTeacher__text">Profesor Tomas Masjoan</p>
-          <p class="cardTeacher__text">23 años</p>
+            />
+            <p class="cardTeacher__text">Profesor Tomas Masjoan</p>
+            <p class="cardTeacher__text">23 años</p>
         </div>
-        <div class="section3__card section3__card3">
+
+        <div class="section3__card col-md-4 d-flex flex-column align-items-center justify-content-center">
           <img
-            class="cardTeacher3__image"
+            class="cardTeacher3__image img-fluid"
             src="../assets/imagenes/profe Tomi.jpeg"
             alt="profesorTomasTofanelli"
-          />
-          <p class="cardTeacher__text">Profesor Tomas Tofanelli</p>
-          <p class="cardTeacher__text">25 años</p>
+            />
+            <p class="cardTeacher__text">Profesor Tomas Tofanelli</p>
+            <p class="cardTeacher__text">25 años</p>
         </div>
+      
       </div>
+    </div>
     </section>
+
+    
     <!-- FOOTER -->
-     <!-- FOOTER -->
-     <footer class="footer">
-      <div class="footer__sedes">
-        <div class="footer__maps mapsSedes">
-          <img
-            class="maps__logo"
-            src="../assets/iconos/ubicacion.png"
-            alt="iconoUbicacion"
-          />
-          <h5 class="maps__text maps__logoText">Dos Sedes</h5>
-        </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-sm-4 col-md-8 align-items-center justify-content-center footer__sedes"
+          >
+            <div class="footer__maps">
+              <img
+                class="maps__logo"
+                src="../assets/iconos/ubicacion.png"
+                alt="iconoUbicacion"
+              />
+              <h5 class="maps__text maps__logoText">Dos Sedes</h5>
+            </div>
 
-        <div class="footer__maps">
-          <p class="maps__text">Quebrada de las Rosas</p>
-          <iframe
-            class="maps__link"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.537424776449!2d-64.26058868552009!3d-31.399315981409764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329f3b992f0bc7%3A0x96a0d6caee5fcdfb!2sClub%20Comunicaciones%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1652035937005!5m2!1ses-419!2sar"
-          ></iframe>
-        </div>
+            <div class="footer__maps">
+              <p class="maps__text">Quebrada de las Rosas</p>
+              <iframe
+                class="maps__link"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.537424776449!2d-64.26058868552009!3d-31.399315981409764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329f3b992f0bc7%3A0x96a0d6caee5fcdfb!2sClub%20Comunicaciones%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1652035937005!5m2!1ses-419!2sar"
+              ></iframe>
+            </div>
 
-        <div class="footer__maps">
-          <p class="maps__text">Chateau</p>
-          <iframe
-            class="maps__link"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3406.169773313345!2d-64.26061168552059!3d-31.38188198141564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329ed914866cef%3A0x481080d83fea793d!2sBarrancas%20del%20Ch%C3%A2teau%20-%20Sal%C3%B3n%20de%20Eventos!5e0!3m2!1ses-419!2sar!4v1652035712286!5m2!1ses-419!2sar"
-          ></iframe>
+            <div class="footer__maps">
+              <p class="maps__text">Chateau</p>
+              <iframe
+                class="maps__link"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3406.169773313345!2d-64.26061168552059!3d-31.38188198141564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329ed914866cef%3A0x481080d83fea793d!2sBarrancas%20del%20Ch%C3%A2teau%20-%20Sal%C3%B3n%20de%20Eventos!5e0!3m2!1ses-419!2sar!4v1652035712286!5m2!1ses-419!2sar"
+              ></iframe>
+            </div>
+          </div>
+
+          <div
+            class="col-md-4 align-items-center justify-content-center footer__socialMedia"
+          >
+            <h5 class="media__text">Seguinos!</h5>
+            <div>
+              <img
+                class="media__icon"
+                src="../assets/iconos/facebook.png"
+                alt="iconoFacebook"
+              />
+              <img
+                class="media__icon"
+                src="../assets/iconos/instagram.png"
+                alt="iconoInstagram"
+              />
+              <img
+                class="media__icon"
+                src="../assets/iconos/youtube.png"
+                alt="iconoYoutube"
+              />
+            </div>
+          </div>
         </div>
       </div>
-
-      <aside class="footer__aside">
-        <h5 class="aside__text">Seguinos!</h5>
-        <div>
-          <img
-            class="aside__icon"
-            src="../assets/iconos/facebook.png"
-            alt="iconoFacebook"
-          />
-          <img
-            class="aside__icon"
-            src="../assets/iconos/instagram.png"
-            alt="iconoInstagram"
-          />
-          <img
-            class="aside__icon"
-            src="../assets/iconos/youtube.png"
-            alt="iconoYoutube"
-          />
-        </div>
-        <div class="aside__contact">
-          <div class="aside__contactInformation">
-            <img
-              class="contact__icon"
-              src="../assets/iconos/phone.png"
-              alt="iconoTelefono"
-            />
-            <p>+ 54 3510000000</p>
-          </div>
-
-          <div class="aside__contactInformation">
-            <img
-              class="contact__icon"
-              src="../assets/iconos/email.png"
-              alt="iconoMail"
-            />
-            <p>info@mhacademia.com</p>
-          </div>
-        </div>
-      </aside>
     </footer>
+
+    <!-- script bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <!-- script libreria AOS (ANIMACIONES) -->
     <script>
       AOS.init();
-    </script
+    </script>
   </body>
 </html>
