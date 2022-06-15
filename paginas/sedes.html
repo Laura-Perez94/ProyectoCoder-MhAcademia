@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Inicio</title>
+    <title>Academia</title>
     <!-- link bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
@@ -16,34 +16,28 @@
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="..//apple-touch-icon.png"
+      href="../favicon/apple-touch-icon.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./favicon/favicon-32x32.png"
+      href="../favicon/favicon-32x32.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="./favicon/favicon-16x16.png"
+      href="../favicon/favicon-16x16.png"
     />
-    <link rel="manifest" href="./favicon/site.webmanifest" />
+    <link rel="manifest" href="../favicon/site.webmanifest" />
     <!-- link fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600&family=Inter:wght@200;300;400;500&family=Josefin+Sans:ital,wght@0,400;0,600;0,700;1,300;1,400&family=Pathway+Gothic+One&family=Racing+Sans+One&family=Roboto:wght@300;400;700&family=Staatliches&display=swap"
       rel="stylesheet"
     />
     <!-- link Style.css -->
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
     <!-- link libreria AOS (ANIMACIONES) -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -59,13 +53,13 @@
           style="background-color: rgba(243, 215, 201, 0.227)"
         >
           <div class="container-fluid">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="../index.html">
               <img
-                src="./assets/imagenes/MhLogo sin fondo.png"
+                src="../assets/imagenes/MhLogo sin fondo.png"
                 alt="logo Mh Academia"
                 width="70"
                 height="70"
-                class="nav__logo d-inline-block align-text"
+                class="d-inline-block align-text"
               />
               ACADEMIA DE TENIS
             </a>
@@ -83,98 +77,144 @@
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a
-                    class="nav-link"
-                    aria-current="page"
-                    href="./paginas/academia.html"
-                    >Academia</a
+                  <a class="nav-link" aria-current="page" href="../index.html"
+                    >Inicio</a
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="./paginas/sedes.html">Sedes</a>
+                  <a class="nav-link" href="./academia.html">Academia</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="./paginas/store.html">Store</a>
+                  <a class="nav-link" href="./store.html">Store</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="../paginas/contacto.html"
-                    >Contacto</a
-                  >
+                  <a class="nav-link" href="./contacto.html">Contacto</a>
                 </li>
               </ul>
             </div>
           </div>
         </nav>
-        <h1 class="headerIndex__title">Sumate a MH Academia de Tenis</h1>
-        <h1 class="headerIndex__title2">
-          Sumate a <br />
-          Mh Academia
-        </h1>
+        <h1 class="headerPages__title">Nuestras Sedes</h1>
       </div>
     </header>
 
-    <!-- MAIN SECTION -->
-    <main class="mainIndex">
-      <div class="mainIndex__container">
-        <div class="mainIndex__information information__container">
-          <div class="row">
-            <div
-              class="col-12 d-flex flex-column align-items-center justify-content-center"
-            >
-              <h3
-                class="mainIndex__text"
-                data-aos="zoom-in"
-                data-aos-once="true"
-              >
-                MH es una <i>academia intengral</i>, <br />
-                que abre sus puertas tanto a niños como adultos de todas las
-                edades, <br />
-                con actividades pensadas para cada uno de ellos.
-              </h3>
-            </div>
+    <!-- First Section -->
+    <section class="sectionSedes">
+      <div class="sectionSedes__subtitle">
+        <img
+          class="subtitle__image"
+          src="../assets/iconos/marcador-de-posicion.png"
+          alt="iconoMaps"
+        />
+        <h2 class="subtitle__text">CLUB COMUNICACIONES</h2>
+      </div>
+
+      <div class="sectionSedes__container container">
+        <div class="row">
+          <div
+            class="sectionSedes__services col-xl-4 d-flex flex-column justify-content-center align-items-center"
+          >
+            <img
+              class="services__image img-fluid"
+              src="../assets/imagenes/club comunicaciones editado.png"
+              alt="academiaClubComunicaciones"
+            />
+            <p class="services__text">Academia</p>
+          </div>
+
+          <div
+            class="sectionSedes__services col-xl-4 d-flex flex-column justify-content-center align-items-center"
+          >
+            <img
+              class="services__image img-fluid"
+              src="../assets/imagenes/instalaciones-clubcomunicaciones.jpg"
+              alt="otrasInstalacionesDelClubComunicaciones"
+            />
+            <p class="services__text">Instalaciones</p>
+          </div>
+
+          <div
+            class="sectionSedes__services col-xl-4 d-flex flex-column justify-content-center align-items-center"
+          >
+            <img
+              class="services__image img-fluid"
+              src="../assets/imagenes/alquiler-clubcomunicaciones.jpg"
+              alt="canchasDeTenisDelClubComunicaciones"
+            />
+            <p class="services__text">Alquiler Canchas</p>
           </div>
         </div>
       </div>
-    </main>
+      <div class="sectionSedes__googleMaps">
+        <img
+          class="googleMaps__icon"
+          src="../assets/iconos/marcador-de-posicion.png"
+          alt="iconoMaps"
+        />
+        <a class="googleMaps__link" href="https://goo.gl/maps/P8L2kN8sPYbkrVdV6"
+          >GOOGLE MAPS
+        </a>
+      </div>
+    </section>
 
-    <!-- NEWS SECTION -->
-    <section class="sectionIndex">
-      <h2 class="section__subtitle">Últimos Eventos y Novedades</h2>
-      <div class="section container text-center">
-        <div
-          class="row sectionIndex__cards"
-          data-aos="fade-down"
-          data-aos-easing="linear"
-          data-aos-duration="1500"
-          data-aos-once="true"
-        >
-          <div class="index__card col-md-4">
+    <hr />
+
+    <!-- Second Section -->
+    <section class="sectionSedes">
+      <div class="sectionSedes__subtitle">
+        <img
+          class="subtitle__image"
+          src="../assets/iconos/marcador-de-posicion.png"
+          alt="iconoMaps"
+        />
+        <h2 class="subtitle__text">CLUB BARRANCAS DEL CHATEAU</h2>
+      </div>
+
+      <div class="sectionSedes__container container">
+        <div class="row">
+          <div
+            class="sectionSedes__services col-xl-4 d-flex flex-column justify-content-center align-items-center"
+          >
             <img
-              class="card__image card__image--bigger img-fluid"
-              src="./assets/imagenes/dia del niño editado 4.png"
-              alt="festejoDiaDelNiñoEnMhAcademia"
+              class="services__image img-fluid"
+              src="../assets/imagenes/club barrancas del chateau editado.png"
+              alt="academiaClubComunicaciones"
             />
-            <h4 class="card__description">Festejo Dia del Niño</h4>
+            <p class="services__text">Academia</p>
           </div>
 
-          <div class="index__card col-md-4">
+          <div
+            class="sectionSedes__services col-xl-4 d-flex flex-column justify-content-center align-items-center"
+          >
             <img
-              class="card__image img-fluid"
-              src="./assets/imagenes/ecuentro 1.jpg"
-              alt="ProfesorYGrupoDeNiñosSosteniendoElTrofeoEnElUltimoEncuentro"
+              class="services__image img-fluid"
+              src="../assets/imagenes/instalaciones-clubcomunicaciones.jpg"
+              alt="otrasInstalacionesDelClubComunicaciones"
             />
-            <h4 class="card__description">Encuentro de Niños</h4>
+            <p class="services__text">Instalaciones</p>
           </div>
 
-          <div class="index__card col-md-4">
+          <div
+            class="sectionSedes__services col-xl-4 d-flex flex-column justify-content-center align-items-center"
+          >
             <img
-              class="card__image img-fluid"
-              src="./assets/imagenes/encuentro adulto 2.jpg"
-              alt="profesorYGrupoDeAdultosSosteniendoElTrofeoEnElUltimoEncuentro"
+              class="services__image img-fluid"
+              src="../assets/imagenes/alquiler club barrancas editado.png"
+              alt="canchasDeTenisDelClubComunicaciones"
             />
-            <h4 class="card__description">Encuentro de Adultos</h4>
+            <p class="services__text">Alquiler Canchas</p>
           </div>
         </div>
+      </div>
+      <div class="sectionSedes__googleMaps">
+        <img
+          class="googleMaps__icon"
+          src="../assets/iconos/marcador-de-posicion.png"
+          alt="iconoMaps"
+        />
+        <a class="googleMaps__link" href="https://goo.gl/maps/1vgA5MFH6RCNNMaKA"
+          >GOOGLE MAPS
+        </a>
       </div>
     </section>
 
@@ -188,7 +228,7 @@
             <div class="footer__maps">
               <img
                 class="maps__logo"
-                src="./assets/iconos/ubicacion.png"
+                src="../assets/iconos/ubicacion.png"
                 alt="iconoUbicacion"
               />
               <h5 class="maps__text maps__logoText">Dos Sedes</h5>
@@ -218,17 +258,17 @@
             <div>
               <img
                 class="media__icon"
-                src="./assets/iconos/facebook.png"
+                src="../assets/iconos/facebook.png"
                 alt="iconoFacebook"
               />
               <img
                 class="media__icon"
-                src="./assets/iconos/instagram.png"
+                src="../assets/iconos/instagram.png"
                 alt="iconoInstagram"
               />
               <img
                 class="media__icon"
-                src="./assets/iconos/youtube.png"
+                src="../assets/iconos/youtube.png"
                 alt="iconoYoutube"
               />
             </div>
