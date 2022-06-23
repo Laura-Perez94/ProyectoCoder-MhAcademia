@@ -1,0 +1,258 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header__container {
+  background-image: url("../assets/imagenes/portada 2.jpg");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.navbar-brand {
+  font-family: "Racing Sans One", cursive;
+  color: #1e4a1e;
+  padding: 1rem;
+}
+.navbar-brand img {
+  margin-right: 1rem;
+  font-size: 1.2rem;
+}
+
+#navbarNav {
+  justify-content: end;
+  padding-right: 1rem;
+}
+
+.nav-item {
+  padding: 0.5rem 0.5rem;
+  margin: 0rem 1rem;
+  border: 0.1rem solid #1e4a1e;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-family: "Racing Sans One", cursive;
+}
+
+.nav-link {
+  color: #1e4a1e;
+}
+
+.headerIndex__title {
+  color: #1e4a1e;
+  font-family: "Racing Sans One", lighter;
+  font-size: 3.3rem;
+  padding: 3rem 4rem;
+  position: absolute;
+  top: 30rem;
+}
+
+.mainIndex__container {
+  height: 100vh;
+  position: relative;
+  background-image: url("../assets/imagenes/foto_fondo_polvo_ladrillo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.mainIndex__information {
+  padding-top: 12rem;
+  color: #1e4a1e;
+  font-family: "Racing Sans One", lighter;
+  text-align: center;
+  align-items: center;
+}
+
+.mainIndex__text {
+  font-size: 2.8rem;
+  line-height: 6rem;
+  font-variant: small-caps;
+  color: #1e4a1e;
+  background-color: rgba(251, 122, 75, 0.744);
+}
+
+.sectionIndex {
+  color: #1e4a1e;
+  font-family: "Racing Sans One", lighter;
+  text-align: center;
+  background: #f1d6b6;
+  background: #f2e0ca;
+  background: radial-gradient(
+    circle,
+    rgba(242, 224, 202, 0.0847689) 17%,
+    rgba(244, 192, 120, 0.132388) 56%,
+    rgba(241, 201, 145, 0.314461) 96%
+  );
+}
+.sectionIndex__subtitle {
+  font-size: 2.5rem;
+  padding: 4rem 0rem;
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+.sectionIndex__cards {
+  align-items: end;
+}
+
+.card__image {
+  background-color: #053305;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.card__description {
+  font-size: 1.5rem;
+  padding: 0.3rem;
+  color: #1e4a1e;
+  border: solid 0.1rem #133c13;
+  font-weight: lighter;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  padding: 2rem 4rem;
+  background: #020024;
+  background: #002400;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 36, 0, 0.656198) 9%,
+    rgba(14, 97, 5, 0.580567) 41%,
+    rgba(69, 134, 96, 0.577766) 68%,
+    rgba(80, 142, 115, 0.555357) 86%,
+    rgba(95, 140, 115, 0.36208) 98%
+  );
+}
+.footer__sedes {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.footer__maps {
+  margin: 0rem 3rem;
+}
+
+.maps__logo {
+  width: 4rem;
+}
+
+.maps__logoText {
+  padding-top: 0.6rem;
+  font-size: 0.8rem;
+}
+
+.maps__text {
+  text-align: center;
+}
+
+.maps__link {
+  height: 4rem;
+  width: 10rem;
+}
+
+.maps__link:hover {
+  height: 5rem;
+  width: 12rem;
+}
+
+.footer__socialMedia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.media__text {
+  font-size: 1rem;
+}
+
+.media__icon {
+  width: 5rem;
+  padding: 0rem 1.3rem;
+  margin: 1rem 0rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .headerIndex__title {
+    font-size: 2.9rem;
+    padding: 2rem 2rem;
+    position: absolute;
+    top: 25rem;
+  }
+  .mainIndex__information {
+    padding-top: 10rem;
+  }
+  .mainIndex__text {
+    font-size: 2.5rem;
+    line-height: 6rem;
+  }
+
+  .footer__sedes {
+    display: none;
+  }
+  .footer__socialMedia {
+    width: 100vw;
+    justify-content: center;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .headerIndex__title {
+    display: none;
+  }
+  .headerIndex__title2 {
+    display: block;
+    color: #223522;
+    font-family: "Racing Sans One";
+    font-weight: lighter;
+    font-size: 3.2rem;
+    padding: 3rem 3rem;
+    position: absolute;
+    top: 25rem;
+  }
+  .headerPages__title {
+    font-size: 3rem;
+    padding: 1rem 4rem;
+    position: absolute;
+    top: 25rem;
+  }
+  .mainIndex__information {
+    padding-top: 7rem;
+  }
+  .mainIndex__text {
+    font-size: 2.3rem;
+    line-height: 5rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .headerIndex__title2 {
+    font-size: 2.5rem;
+    padding: 3rem 2rem;
+  }
+  .navbar-brand {
+    font-size: 1rem;
+  }
+  .navbar-brand > img {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  .mainIndex__information {
+    padding-top: 6rem;
+  }
+  .mainIndex__text {
+    font-size: 2rem;
+    line-height: 4rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .headerIndex__title2 {
+    display: none;
+  }
+}

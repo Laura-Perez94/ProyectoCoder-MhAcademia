@@ -1,0 +1,36 @@
+.sectionIndex {
+  color: $fontColor;
+  font-family: $fontFamily2;
+  text-align: center;
+  background: rgb(241, 214, 182);
+  background: rgb(242, 224, 202);
+  background: radial-gradient(
+    circle,
+    rgba(242, 224, 202, 0.08476894175639005) 17%,
+    rgba(244, 192, 120, 0.13238798937543772) 56%,
+    rgba(241, 201, 145, 0.3144608185070903) 96%
+  );
+  &__subtitle {
+    font-size: 2.5rem;
+    padding: 4rem 0rem;
+    font-weight: lighter;
+    text-transform: uppercase;
+  }
+  &__cards {
+    align-items: end;
+  }
+}
+
+.card__image {
+  background-color: rgb(5, 51, 5);
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.card__description {
+  font-size: 1.5rem;
+  padding: 0.3rem;
+  color: $fontColor;
+  border: solid 0.1rem rgb(19, 60, 19);
+  font-weight: lighter;
+}

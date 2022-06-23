@@ -1,0 +1,23 @@
+.mainIndex {
+  &__container {
+    height: 100vh;
+    position: relative;
+    background-image: url("../assets/imagenes/foto_fondo_polvo_ladrillo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  &__information {
+    padding-top: 12rem;
+    color: $fontColor;
+    font-family: $fontFamily2;
+    text-align: center;
+    align-items: center;
+  }
+  &__text {
+    font-size: 2.8rem;
+    line-height: 6rem;
+    font-variant: small-caps;
+    color: $fontColor;
+    background-color: rgba(251, 122, 75, 0.744);
+  }
+}

@@ -1,0 +1,344 @@
+@media screen and (max-width: 1024px) {
+  .headerIndex__title {
+    font-size: 2.9rem;
+    padding: 2rem 2rem;
+    position: absolute;
+    top: 25rem;
+  }
+
+  .mainIndex__information {
+    padding-top: 10rem;
+  }
+
+  .mainIndex__text {
+    font-size: 2.5rem;
+    line-height: 6rem;
+  }
+
+  .secondSection__container {
+    top: 4rem;
+  }
+
+  .secondSection__title {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .secondSection__text {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+
+  .contact__section {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 0rem 3rem 0rem;
+  }
+
+  .contact__text {
+    font-size: 1rem;
+  }
+
+  .contact__information {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 2rem 1rem;
+    margin: 0rem;
+  }
+
+  .contact__information1 {
+    margin: 0rem 2rem;
+  }
+
+  .contact__image {
+    width: 3rem;
+    margin: 2rem 2rem;
+  }
+
+  .contact2__title {
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+  }
+
+  .contact2__text {
+    font-size: 1.3rem;
+    line-height: 1rem;
+    padding: 2rem 0rem 1rem 0rem;
+  }
+
+  .contact2__image {
+    width: 3rem;
+    margin: 2rem 3rem;
+  }
+
+  .contact2__image--bigger {
+    width: 3.5rem;
+  }
+
+  .form__bottoms {
+    color: rgb(34, 53, 34);
+    padding: 2rem 2rem;
+  }
+
+  .form__bottom {
+    padding: 0.3rem 0.3rem;
+    margin: 0rem 0.3rem;
+    border-radius: 0.3rem;
+  }
+
+  .agreement__text {
+    font-size: 1rem;
+    padding-right: 0rem;
+  }
+
+  .form__agreement {
+    padding: 0rem 4rem;
+    font-size: 1.1rem;
+  }
+
+  .footer__sedes {
+    display: none;
+  }
+  .footer__socialMedia {
+    width: 100vw;
+    justify-content: center;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .headerIndex__title {
+    display: none;
+  }
+
+  .headerIndex__title2 {
+    display: block;
+    color: rgb(34, 53, 34);
+    font-family: "Racing Sans One";
+    font-weight: lighter;
+    font-size: 3.2rem;
+    padding: 3rem 3rem;
+    position: absolute;
+    top: 25rem;
+  }
+
+  .headerPages__title {
+    font-size: 3rem;
+    padding: 1rem 4rem;
+    position: absolute;
+    top: 25rem;
+  }
+
+  .mainIndex__information {
+    padding-top: 7rem;
+  }
+
+  .mainIndex__text {
+    font-size: 2.3rem;
+    line-height: 5rem;
+  }
+
+  .section2__card1 {
+    max-width: 400px;
+  }
+
+  .card1__text {
+    font-size: 1rem;
+    padding: 0.7rem 8.4rem;
+    top: 14rem;
+  }
+
+  .section2__card2 {
+    max-width: 400px;
+  }
+
+  .card2__text {
+    font-size: 1rem;
+    padding: 0.7rem 8.5rem;
+    top: 14rem;
+  }
+
+  .cardTeacher1__image {
+    width: 20rem;
+    height: 16rem;
+  }
+
+  .cardTeacher2__image {
+    width: 24rem;
+    height: 16rem;
+  }
+
+  .cardTeacher3__image {
+    width: 18rem;
+    height: 16rem;
+  }
+
+  .secondSection__container {
+    top: 4rem;
+    right: 5rem;
+    max-width: 70vw;
+  }
+
+  .secondSection__title {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .secondSection__text {
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+    line-height: 1.5rem;
+    text-align: center;
+    padding: 1rem 3rem;
+  }
+
+  .contact__section {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 0rem 3rem 0rem;
+  }
+
+  .contact__text {
+    font-size: 0.9rem;
+  }
+
+  .contact__information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem 1rem;
+    margin: 0rem;
+  }
+
+  .contact__information1 {
+    margin: 0rem 2rem;
+  }
+
+  .contact__image {
+    width: 2.5rem;
+    margin: 2rem 2rem;
+  }
+
+  .contact2__title {
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+  }
+
+  .contact2__text {
+    font-size: 1rem;
+    line-height: 1rem;
+    padding: 2rem 0rem 1rem 0rem;
+  }
+
+  .contact2__image {
+    width: 2rem;
+    margin: 1.5rem 2rem;
+  }
+
+  .contact2__image--bigger {
+    width: 2.5rem;
+  }
+
+  .form {
+    padding: 1.3rem 0.2rem;
+  }
+
+  .form__bottoms {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem 0rem;
+    font-size: 0.7rem;
+  }
+  .form__bottom {
+    margin: 0.2rem 0rem;
+  }
+
+  .agreement__text {
+    padding: 0rem;
+    margin: 0.5rem 0.2rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .headerIndex__title2 {
+    font-size: 2.5rem;
+    padding: 3rem 2rem;
+  }
+
+  .navbar-brand {
+    font-size: 1rem;
+  }
+
+  .navbar-brand > img {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .mainIndex__information {
+    padding-top: 6rem;
+  }
+
+  .mainIndex__text {
+    font-size: 2rem;
+    line-height: 4rem;
+  }
+
+  .section2__subtitle {
+    font-size: 2.1rem;
+    padding: 1rem 0rem 2rem 3rem;
+  }
+
+  .section2__card1 {
+    max-width: 400px;
+  }
+
+  .card1__text {
+    font-size: 1rem;
+    padding: 0.7rem 6.9rem;
+    top: 10rem;
+  }
+
+  .section2__card2 {
+    max-width: 400px;
+  }
+
+  .card2__text {
+    font-size: 1rem;
+    padding: 0.7rem 7rem;
+    top: 10rem;
+  }
+
+  .media__icon {
+    width: 4rem;
+    padding: 0rem 1.2rem;
+    margin: 0.3rem 0rem;
+  }
+
+  .cardTeacher1__image {
+    width: 17rem;
+    height: 13rem;
+  }
+
+  .cardTeacher2__image {
+    width: 21rem;
+    height: 13rem;
+  }
+
+  .cardTeacher3__image {
+    width: 15rem;
+    height: 13rem;
+  }
+
+  .services__text {
+    padding: 0.7rem 4rem;
+    margin: 0.5rem 0rem 1rem 0rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .headerIndex__title2 {
+    display: none;
+  }
+}
