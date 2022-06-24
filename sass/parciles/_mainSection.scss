@@ -1,23 +1,41 @@
 .mainIndex {
   &__container {
-    height: 100vh;
-    position: relative;
-    background-image: url("../assets/imagenes/foto_fondo_polvo_ladrillo.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+    /* extend de header Index */
+    @extend .header__container;
+    background-image: url("../../assets/imagenes/foto_fondo_polvo_ladrillo.jpg");
   }
   &__information {
     padding-top: 12rem;
-    color: $fontColor;
-    font-family: $fontFamily2;
+    color: map-get($color, "font");
+    font-family: map-get($font, "font2");
     text-align: center;
     align-items: center;
+    @media screen and (max-width: 1024px) {
+      padding-top: 10rem;
+    }
+    @media screen and (max-width: 768px) {
+      padding-top: 7rem;
+    }
+    @media screen and (max-width: 425px) {
+      padding-top: 6rem;
+    }
   }
   &__text {
     font-size: 2.8rem;
     line-height: 6rem;
     font-variant: small-caps;
-    color: $fontColor;
+    color: map-get($color, "font");
     background-color: rgba(251, 122, 75, 0.744);
+    @media screen and (max-width: 1024px) {
+      font-size: 2.5rem;
+    }
+    @media screen and (max-width: 768px) {
+      font-size: 2.3rem;
+      line-height: 5rem;
+    }
+    @media screen and (max-width: 425px) {
+      font-size: 2rem;
+      line-height: 4rem;
+    }
   }
 }

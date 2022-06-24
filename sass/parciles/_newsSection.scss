@@ -1,6 +1,6 @@
 .sectionIndex {
-  color: $fontColor;
-  font-family: $fontFamily2;
+  color: map-get($color, "font");
+  font-family: map-get($font, "font2");
   text-align: center;
   background: rgb(241, 214, 182);
   background: rgb(242, 224, 202);
@@ -19,18 +19,19 @@
   &__cards {
     align-items: end;
   }
-}
+  &__card {
+    .card__image {
+      background-color: map-get($color, "background");
+      padding: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
 
-.card__image {
-  background-color: rgb(5, 51, 5);
-  padding: 0.5rem;
-  margin-bottom: 0.5rem;
-}
-
-.card__description {
-  font-size: 1.5rem;
-  padding: 0.3rem;
-  color: $fontColor;
-  border: solid 0.1rem rgb(19, 60, 19);
-  font-weight: lighter;
+    .card__description {
+      font-size: 1.5rem;
+      padding: 0.3rem;
+      color: map-get($color, "font");
+      border: $border;
+      font-weight: lighter;
+    }
+  }
 }

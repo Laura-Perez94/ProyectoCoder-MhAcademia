@@ -1,7 +1,10 @@
 @import "./parciles/reset";
-@import "./parciles/variables";
+@import "./parciles/map";
 @import "./parciles/header";
 @import "./parciles/mainSection";
 @import "./parciles/newsSection";
+@import "../sass/parciles/academia/academia";
+@import "../sass/parciles/sedes/sedes";
+@import "../sass/parciles/store/store";
+@import "../sass/parciles/contacto/contacto";
 @import "./parciles/footer";
-@import "./parciles/mediaQueries";

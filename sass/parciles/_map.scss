@@ -1,0 +1,26 @@
+$border: 0.1rem solid rgb(30, 74, 30);
+
+$font: (
+  "font1": "Racing Sans One" cursive,
+  "font2": "Racing Sans One" lighter,
+  "font3": "Inter" sans-serif,
+);
+
+$color: (
+  "font": rgb(30, 74, 30),
+  "background": rgb(5, 51, 5),
+);
+
+@mixin backgroundImg {
+  background-image: url("../assets/imagenes/portada\ 2.jpg");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+@mixin flex {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}

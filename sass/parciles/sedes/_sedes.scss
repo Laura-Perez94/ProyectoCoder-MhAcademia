@@ -1,0 +1,52 @@
+.sectionSedes {
+  font-family: "Racing Sans One";
+  color: rgb(34, 53, 34);
+  padding: 1rem;
+}
+
+.sectionSedes__subtitle {
+  text-align: center;
+  padding: 2rem 0rem;
+  font-size: 2rem;
+}
+
+.subtitle__image {
+  width: 6rem;
+  padding-bottom: 1rem;
+}
+
+.services__image {
+  width: 30rem;
+  position: relative;
+  margin-top: 3rem;
+}
+
+.services__text {
+  font-size: 1.1rem;
+  text-align: center;
+  padding: 0.7rem 7rem;
+  margin: 0.5rem 0rem 1rem 0rem;
+  background-color: rgba(246, 194, 96, 0.715);
+  position: absolute;
+}
+
+.sectionSedes__googleMaps {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 4rem 4rem 1rem 0rem;
+}
+
+.googleMaps__icon {
+  width: 5rem;
+}
+
+.googleMaps__link {
+  text-align: center;
+  text-decoration: none;
+  color: rgb(34, 53, 34);
+  font-size: 1.2rem;
+  padding: 0.6rem;
+  border: 0.1rem solid rgb(30, 74, 30);
+  border-radius: 0.5rem;
+}

@@ -4,7 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Inicio</title>
+    <meta
+      name="description"
+      content="Mh academia de tenis integral para niños y adultos de todas las edades"
+    />
+    <meta
+      name="keywords"
+      content="academia de tenis, tenis para niños, tenis para adultos"
+    />
+    <title>Mh Academia | bienvenidos</title>
     <!-- link bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
@@ -55,11 +63,11 @@
       <div class="header__container">
         <!-- NAVBAR -->
         <nav
-          class="navbar navbar-expand-lg"
+          class="header__navbar navbar navbar-expand-lg"
           style="background-color: rgba(243, 215, 201, 0.227)"
         >
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#">
+          <div class="header__logo container-fluid">
+            <a class="header__logo--anchor navbar-brand" href="#">
               <img
                 src="./assets/imagenes/MhLogo sin fondo.png"
                 alt="logo Mh Academia"
@@ -80,24 +88,31 @@
             >
               <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item">
+            <div
+              class="collapse navbar-collapse d-flex justify-content-end"
+              id=" navbarNav"
+            >
+              <ul class="nav navbar-nav">
+                <li class="nav__item nav-item">
                   <a
-                    class="nav-link"
+                    class="nav__link nav-link"
                     aria-current="page"
                     href="./paginas/academia.html"
                     >Academia</a
                   >
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./paginas/sedes.html">Sedes</a>
+                <li class="nav__item nav-item">
+                  <a class="nav__link nav-link" href="./paginas/sedes.html"
+                    >Sedes</a
+                  >
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./paginas/store.html">Store</a>
+                <li class="nav__item nav-item">
+                  <a class="nav__link nav-link" href="./paginas/store.html"
+                    >Store</a
+                  >
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="../paginas/contacto.html"
+                <li class="nav__item nav-item">
+                  <a class="nav__link nav-link" href="../paginas/contacto.html"
                     >Contacto</a
                   >
                 </li>
@@ -105,8 +120,8 @@
             </div>
           </div>
         </nav>
-        <h1 class="headerIndex__title">Sumate a MH Academia de Tenis</h1>
-        <h1 class="headerIndex__title2">
+        <h1 class="header__indexTitle">Sumate a MH Academia de Tenis</h1>
+        <h1 class="header__indexTitle2">
           Sumate a <br />
           Mh Academia
         </h1>
@@ -150,14 +165,14 @@
         >
           <div class="sectionIndex__card col-md-4">
             <img
-              class="card__image card__image--bigger img-fluid"
+              class="card__image img-fluid"
               src="./assets/imagenes/dia del niño editado 4.png"
               alt="festejoDiaDelNiñoEnMhAcademia"
             />
             <h4 class="card__description">Festejo Dia del Niño</h4>
           </div>
 
-          <div class="index__card col-md-4">
+          <div class="sectionIndex__card col-md-4">
             <img
               class="card__image img-fluid"
               src="./assets/imagenes/ecuentro 1.jpg"
@@ -166,7 +181,7 @@
             <h4 class="card__description">Encuentro de Niños</h4>
           </div>
 
-          <div class="index__card col-md-4">
+          <div class="sectionIndex__card col-md-4">
             <img
               class="card__image img-fluid"
               src="./assets/imagenes/encuentro adulto 2.jpg"
@@ -187,25 +202,27 @@
           >
             <div class="footer__maps">
               <img
-                class="maps__logo"
+                class="footer__maps--logo"
                 src="./assets/iconos/ubicacion.png"
                 alt="iconoUbicacion"
               />
-              <h5 class="maps__text maps__logoText">Dos Sedes</h5>
+              <h5 class="footer__maps--text footer__maps--logoText">
+                Dos Sedes
+              </h5>
             </div>
 
             <div class="footer__maps">
-              <p class="maps__text">Quebrada de las Rosas</p>
+              <p class="footer__maps--text">Quebrada de las Rosas</p>
               <iframe
-                class="maps__link"
+                class="footer__maps--link"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.537424776449!2d-64.26058868552009!3d-31.399315981409764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329f3b992f0bc7%3A0x96a0d6caee5fcdfb!2sClub%20Comunicaciones%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1652035937005!5m2!1ses-419!2sar"
               ></iframe>
             </div>
 
             <div class="footer__maps">
-              <p class="maps__text">Chateau</p>
+              <p class="footer__maps--text">Chateau</p>
               <iframe
-                class="maps__link"
+                class="footer__maps--link"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3406.169773313345!2d-64.26061168552059!3d-31.38188198141564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329ed914866cef%3A0x481080d83fea793d!2sBarrancas%20del%20Ch%C3%A2teau%20-%20Sal%C3%B3n%20de%20Eventos!5e0!3m2!1ses-419!2sar!4v1652035712286!5m2!1ses-419!2sar"
               ></iframe>
             </div>
@@ -214,20 +231,20 @@
           <div
             class="col-md-4 align-items-center justify-content-center footer__socialMedia"
           >
-            <h5 class="media__text">Seguinos!</h5>
+            <h5 class="footer__media--text">Seguinos!</h5>
             <div>
               <img
-                class="media__icon"
+                class="footer__media--icon"
                 src="./assets/iconos/facebook.png"
                 alt="iconoFacebook"
               />
               <img
-                class="media__icon"
+                class="footer__media--icon"
                 src="./assets/iconos/instagram.png"
                 alt="iconoInstagram"
               />
               <img
-                class="media__icon"
+                class="footer__media--icon"
                 src="./assets/iconos/youtube.png"
                 alt="iconoYoutube"
               />
