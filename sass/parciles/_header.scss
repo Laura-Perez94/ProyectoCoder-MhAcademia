@@ -1,63 +1,85 @@
+/* HEADER */
+
 .header {
   &__container {
     @include backgroundImg;
-  }
-  &__logo--anchor {
-    font-family: map-get($font, "font1");
-    color: map-get($color, "font");
-    padding: 1rem;
-    img {
-      margin-right: 1rem;
-      font-size: 1.2rem;
-    }
-  }
 
-  &__indexTitle {
-    color: map-get($color, "font");
-    font-family: map-get($font, "font2");
-    font-size: 3.3rem;
-    padding: 3rem 4rem;
-    position: absolute;
-    top: 30rem;
-    @media screen and (max-width: 1024px) {
-      font-size: 2.9rem;
-      padding: 2rem 2rem;
-      top: 25rem;
-    }
-    @media screen and (max-width: 768px) {
-      display: none;
-    }
-  }
+    /* Navbar */
 
-  &__indexTitle2 {
-    @media screen and (max-width: 768px) {
+    .navbar {
+      &-brand {
+        font-family: map-get($font, "font1"), cursive;
+        color: map-get($color, "font");
+        padding: 1rem;
+        img {
+          margin-right: 1rem;
+          font-size: 1.2rem;
+        }
+      }
+      #navbarNav {
+        justify-content: end;
+        padding-right: 1rem;
+        font-family: map-get($font, "font1"), cursive;
+        .navbar-nav {
+          .nav-item {
+            padding: 0.5rem 0.5rem;
+            margin: 0rem 1rem;
+            border: 0.1rem solid rgb(30, 74, 30);
+            border-radius: 0.5rem;
+            font-size: 1rem;
+            font-family: map-get($font, "font1"), cursive;
+            .nav-link {
+              color: map-get($color, "font");
+            }
+          }
+        }
+      }
+    }
+
+    .header__title {
       color: map-get($color, "font");
-      font-family: map-get($font, "font2");
+      font-family: map-get($font, "font1"), cursive;
+      font-weight: lighter;
       font-size: 3.3rem;
       padding: 3rem 4rem;
       position: absolute;
-      top: 25rem;
+      top: 30rem;
+      @media screen and (max-width: 768px) {
+        font-size: 3rem;
+        padding: 1rem 4rem;
+        position: absolute;
+        top: 25rem;
+      }
     }
-    @media screen and (max-width: 425px) {
-      font-size: 2.5rem;
-      padding: 3rem 2rem;
-    }
-    @media screen and (min-width: 768px) {
-      display: none;
-    }
-  }
 
-  .nav {
-    &__item {
-      padding: 0.5rem 0.5rem;
-      margin: 0rem 1rem;
-      border: $border;
-      border-radius: 0.5rem;
-      font-size: 1rem;
-      font-family: map-get($font, "font1");
+    .headerIndex__title {
+      @extend .header__title;
+      @media screen and (max-width: 1024px) {
+        font-size: 2.9rem;
+        padding: 2rem 2rem;
+        top: 25rem;
+      }
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
     }
-    &__link {
-      color: map-get($color, "font");
+
+    .headerIndex__title2 {
+      @media screen and (max-width: 768px) {
+        color: map-get($color, "font");
+        font-family: map-get($font, "font1"), cursive;
+        font-size: 3rem;
+        padding: 3rem 4rem;
+        position: absolute;
+        top: 25rem;
+      }
+      @media screen and (max-width: 425px) {
+        font-size: 2.5rem;
+        padding: 3rem 2rem;
+      }
+      @media screen and (min-width: 768px) {
+        display: none;
+      }
     }
   }
 }

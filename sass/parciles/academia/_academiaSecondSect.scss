@@ -1,0 +1,78 @@
+/* Page: Academia - Second Section */
+
+.section2 {
+  padding: 5rem 2rem;
+  font-family: map-get($font, "font1");
+  color: map-get($color, "font");
+  background: radial-gradient(
+    circle,
+    rgba(242, 224, 202, 0.08476894175639005) 17%,
+    rgba(244, 192, 120, 0.13238798937543772) 56%,
+    rgba(241, 201, 145, 0.3144608185070903) 96%
+  );
+  &__text {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    padding: 0rem 0rem 1.5rem 4rem;
+  }
+  &__subtitle {
+    font-size: 2.3rem;
+    padding: 1rem 0rem 2rem 7rem;
+    @media screen and (max-width: 425px) {
+      font-size: 2.1rem;
+      padding: 1rem 0rem 2rem 3rem;
+    }
+  }
+  &__cards {
+    justify-content: space-around;
+    margin-bottom: 2rem;
+  }
+  &__card1 {
+    position: relative;
+    @include flex2;
+    padding: 1rem 0rem;
+    max-width: 500px;
+    @media screen and (max-width: 768px) {
+      max-width: 400px;
+    }
+    @media screen and (max-width: 425px) {
+      max-width: 400px;
+    }
+  }
+
+  &__card1--text {
+    font-size: 1.2rem;
+    font-weight: lighter;
+    text-align: center;
+    background-color: rgba(245, 199, 113, 0.927);
+    margin-top: 0.5rem;
+    padding: 1rem 10.7rem;
+    margin-top: 0.5rem;
+    position: absolute;
+    top: 21rem;
+    @media screen and (max-width: 768px) {
+      font-size: 1rem;
+      padding: 0.7rem 8.4rem;
+      top: 14rem;
+    }
+    @media screen and (max-width: 425px) {
+      padding: 0.7rem 6.9rem;
+      top: 10rem;
+    }
+  }
+
+  &__card2 {
+    @extend .section2__card1;
+  }
+
+  &__card2--text {
+    @extend .section2__card1--text;
+    padding: 1rem 10.9rem;
+    @media screen and (max-width: 768px) {
+      padding: 0.7rem 8.5rem;
+    }
+    @media screen and (max-width: 425px) {
+      padding: 0.7rem 7rem;
+    }
+  }
+}

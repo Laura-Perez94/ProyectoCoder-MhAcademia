@@ -1,9 +1,11 @@
 @import "./parciles/reset";
 @import "./parciles/map";
 @import "./parciles/header";
-@import "./parciles/mainSection";
-@import "./parciles/newsSection";
-@import "../sass/parciles/academia/academia";
+@import "./parciles/index/mainSection";
+@import "./parciles/index/newsSection";
+@import "../sass/parciles/academia/mainAcademia";
+@import "../sass/parciles/academia/_academiaSecondSect";
+@import "../sass/parciles/academia/academiaThirdSec";
 @import "../sass/parciles/sedes/sedes";
 @import "../sass/parciles/store/store";
 @import "../sass/parciles/contacto/contacto";
