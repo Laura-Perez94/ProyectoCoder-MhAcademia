@@ -1,7 +1,7 @@
 .mainIndex {
   &__container {
     /* extend de header Index */
-    @extend .header__container;
+    @include backgroundImg;
     background-image: url("../../assets/imagenes/foto_fondo_polvo_ladrillo.jpg");
   }
   &__information {

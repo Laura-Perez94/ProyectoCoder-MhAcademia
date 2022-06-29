@@ -1,0 +1,68 @@
+/* Page: Academia - Third Section */
+
+.section3 {
+  margin-top: -1rem;
+  font-family: map-get($font, "font1");
+  color: map-get($color, "font");
+  padding-bottom: 4rem;
+  background: radial-gradient(
+    circle,
+    rgba(242, 224, 202, 0.08476894175639005) 17%,
+    rgba(244, 192, 120, 0.13238798937543772) 56%,
+    rgba(241, 201, 145, 0.3144608185070903) 96%
+  );
+
+  &__subtitle {
+    font-size: 2.3rem;
+    padding: 4rem 0rem 6rem 4rem;
+  }
+
+  &__img1 {
+    width: 23rem;
+    height: 19rem;
+    margin-bottom: 0.5rem;
+    @media screen and (max-width: 768px) {
+      width: 20rem;
+      height: 16rem;
+    }
+    @media screen and (max-width: 425px) {
+      width: 17rem;
+      height: 13rem;
+    }
+  }
+
+  &__img2 {
+    width: 27rem;
+    height: 19rem;
+    margin-bottom: 0.5rem;
+    @media screen and (max-width: 768px) {
+      width: 24rem;
+      height: 16rem;
+    }
+    @media screen and (max-width: 425px) {
+      width: 21rem;
+      height: 13rem;
+    }
+  }
+
+  &__img3 {
+    width: 21rem;
+    height: 19rem;
+    margin-bottom: 0.5rem;
+    @media screen and (max-width: 768px) {
+      width: 18rem;
+      height: 16rem;
+    }
+    @media screen and (max-width: 425px) {
+      width: 15rem;
+      height: 13rem;
+    }
+  }
+
+  &__text {
+    font-size: 1.2rem;
+    font-weight: lighter;
+    text-align: center;
+    padding: 0.3rem 0rem;
+  }
+}

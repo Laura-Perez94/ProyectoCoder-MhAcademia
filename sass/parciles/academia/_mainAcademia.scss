@@ -1,0 +1,26 @@
+/* Page: Academia - Main Section */
+
+.academiaMain {
+  background: rgb(210, 123, 17);
+  background: radial-gradient(
+    circle,
+    rgba(210, 123, 17, 0.5049370089832808) 34%,
+    rgba(218, 173, 118, 0.6337885495995272) 69%,
+    rgba(231, 206, 175, 0.8242647400757178) 91%
+  );
+  padding: 5rem;
+
+  &__text {
+    color: rgb(34, 53, 34);
+    font-family: "Racing Sans One";
+    font-weight: lighter;
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 3rem;
+    margin-top: 2.5rem;
+  }
+  &__image--img {
+    width: 21rem;
+    border: 0.3rem solid rgba(91, 90, 89, 0.474);
+  }
+}

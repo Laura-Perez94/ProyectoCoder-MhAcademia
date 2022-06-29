@@ -18,8 +18,12 @@
   }
   &__cards {
     align-items: end;
+    padding: 2rem 0rem 4rem 0rem;
   }
   &__card {
+    @media screen and (max-width: 992px) {
+      padding-bottom: 1.5rem;
+    }
     .card__image {
       background-color: map-get($color, "background");
       padding: 0.5rem;
