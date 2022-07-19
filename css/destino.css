@@ -1,7 +1,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 /* HEADER */
 .header__container {
@@ -10,68 +11,91 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  /* Navbar */ }
-  .header__container .navbar-brand {
-    font-family: "Racing Sans One", cursive;
+  /* Navbar */
+}
+.header__container .navbar-brand {
+  font-family: "Racing Sans One", cursive;
+  color: #1e4a1e;
+  padding: 1rem;
+  font-size: 1rem;
+}
+.header__container .navbar-brand img {
+  margin-right: 1rem;
+}
+.header__container .navbar-toggler {
+  border: 0.1rem solid #1e4a1e;
+}
+.header__container .navbar #navbarNav {
+  justify-content: end;
+  padding-right: 1rem;
+  font-family: "Racing Sans One", cursive;
+}
+.header__container .navbar #navbarNav .navbar-nav {
+  text-align: center;
+}
+.header__container .navbar #navbarNav .navbar-nav .nav-item {
+  padding: 0.5rem 0.5rem;
+  margin: 0rem 1rem;
+  border: 0.1rem solid #1e4a1e;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-family: "Racing Sans One", cursive;
+}
+.header__container .navbar #navbarNav .navbar-nav .nav-item .nav-link {
+  color: #1e4a1e;
+}
+.header__container .header__title,
+.header__container .headerIndex__title {
+  color: #1e4a1e;
+  font-family: "Racing Sans One", cursive;
+  font-weight: lighter;
+  font-size: 3.3rem;
+  padding: 3rem 4rem;
+  position: absolute;
+  top: 30rem;
+}
+@media screen and (max-width: 768px) {
+  .header__container .header__title,
+  .header__container .headerIndex__title {
+    font-size: 3rem;
+    padding: 1rem 4rem;
+    position: absolute;
+    top: 25rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .header__container .headerIndex__title {
+    font-size: 2.9rem;
+    padding: 2rem 2rem;
+    top: 25rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .header__container .headerIndex__title {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header__container .headerIndex__title2 {
     color: #1e4a1e;
-    padding: 1rem;
-    font-size: 1rem; }
-    .header__container .navbar-brand img {
-      margin-right: 1rem; }
-  .header__container .navbar-toggler {
-    border: 0.1rem solid #1e4a1e; }
-  .header__container .navbar #navbarNav {
-    justify-content: end;
-    padding-right: 1rem;
-    font-family: "Racing Sans One", cursive; }
-    .header__container .navbar #navbarNav .navbar-nav {
-      text-align: center; }
-      .header__container .navbar #navbarNav .navbar-nav .nav-item {
-        padding: 0.5rem 0.5rem;
-        margin: 0rem 1rem;
-        border: 0.1rem solid #1e4a1e;
-        border-radius: 0.5rem;
-        font-size: 1rem;
-        font-family: "Racing Sans One", cursive; }
-        .header__container .navbar #navbarNav .navbar-nav .nav-item .nav-link {
-          color: #1e4a1e; }
-  .header__container .header__title, .header__container .headerIndex__title {
-    color: #1e4a1e;
     font-family: "Racing Sans One", cursive;
-    font-weight: lighter;
-    font-size: 3.3rem;
+    font-size: 3rem;
     padding: 3rem 4rem;
     position: absolute;
-    top: 30rem; }
-    @media screen and (max-width: 768px) {
-      .header__container .header__title, .header__container .headerIndex__title {
-        font-size: 3rem;
-        padding: 1rem 4rem;
-        position: absolute;
-        top: 25rem; } }
-  @media screen and (max-width: 1024px) {
-    .header__container .headerIndex__title {
-      font-size: 2.9rem;
-      padding: 2rem 2rem;
-      top: 25rem; } }
-  @media screen and (max-width: 767px) {
-    .header__container .headerIndex__title {
-      display: none; } }
-  @media screen and (max-width: 768px) {
-    .header__container .headerIndex__title2 {
-      color: #1e4a1e;
-      font-family: "Racing Sans One", cursive;
-      font-size: 3rem;
-      padding: 3rem 4rem;
-      position: absolute;
-      top: 25rem; } }
-  @media screen and (max-width: 425px) {
-    .header__container .headerIndex__title2 {
-      font-size: 2.5rem;
-      padding: 3rem 2rem; } }
-  @media screen and (min-width: 768px) {
-    .header__container .headerIndex__title2 {
-      display: none; } }
+    top: 25rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  .header__container .headerIndex__title2 {
+    font-size: 2.5rem;
+    padding: 3rem 2rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header__container .headerIndex__title2 {
+    display: none;
+  }
+}
 
 .mainIndex__container {
   /* extend de header Index */
@@ -80,21 +104,27 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  background-image: url("../../assets/imagenes/foto_fondo_polvo_ladrillo.jpg"); }
+  background-image: url("../../assets/imagenes/foto_fondo_polvo_ladrillo.jpg");
+}
 
 .mainIndex__information {
   padding-top: 12rem;
   color: #1e4a1e;
   font-family: "Racing Sans One";
   text-align: center;
-  align-items: center; }
-  @media screen and (max-width: 1024px) {
-    .mainIndex__information {
-      padding-top: 10rem; } }
-  @media screen and (max-width: 768px) {
-    .mainIndex__information {
-      padding: 0rem 1.5rem;
-      padding-top: 5.5rem; } }
+  align-items: center;
+}
+@media screen and (max-width: 1024px) {
+  .mainIndex__information {
+    padding-top: 10rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .mainIndex__information {
+    padding: 0rem 1.5rem;
+    padding-top: 5.5rem;
+  }
+}
 
 .mainIndex__text {
   font-family: "Racing Sans One" lighter;
@@ -102,146 +132,220 @@
   line-height: 6rem;
   font-variant: small-caps;
   color: #1e4a1e;
-  background-color: rgba(251, 122, 75, 0.744); }
-  @media screen and (max-width: 1024px) {
-    .mainIndex__text {
-      font-size: 2.5rem; } }
-  @media screen and (max-width: 768px) {
-    .mainIndex__text {
-      font-size: 2.3rem;
-      line-height: 5rem; } }
-  @media screen and (max-width: 425px) {
-    .mainIndex__text {
-      font-size: 2rem;
-      line-height: 4rem; } }
+  background-color: rgba(251, 122, 75, 0.744);
+}
+@media screen and (max-width: 1024px) {
+  .mainIndex__text {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .mainIndex__text {
+    font-size: 2.3rem;
+    line-height: 5rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  .mainIndex__text {
+    font-size: 2rem;
+    line-height: 4rem;
+  }
+}
 
 .sectionIndex {
   background: #f1d6b6;
   background: #f2e0ca;
-  background: radial-gradient(circle, rgba(242, 224, 202, 0.0847689) 17%, rgba(244, 192, 120, 0.132388) 56%, rgba(241, 201, 145, 0.314461) 96%);
+  background: radial-gradient(
+    circle,
+    rgba(242, 224, 202, 0.0847689) 17%,
+    rgba(244, 192, 120, 0.132388) 56%,
+    rgba(241, 201, 145, 0.314461) 96%
+  );
   color: #1e4a1e;
   font-family: "Racing Sans One";
-  text-align: center; }
+  text-align: center;
+}
+.sectionIndex__subtitle {
+  font-size: 2.5rem;
+  padding: 4rem 0rem;
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 768px) {
   .sectionIndex__subtitle {
-    font-size: 2.5rem;
-    padding: 4rem 0rem;
-    font-weight: lighter;
-    text-transform: uppercase; }
-    @media screen and (max-width: 768px) {
-      .sectionIndex__subtitle {
-        font-size: 2.3rem; } }
-  .sectionIndex__cards {
-    align-items: end;
-    padding: 2rem 0rem 4rem 0rem; }
-  @media screen and (max-width: 992px) {
-    .sectionIndex__card {
-      padding-bottom: 1.5rem; } }
-  @media screen and (max-width: 992px) and (max-width: 426px) {
-    .sectionIndex__card {
-      padding: 1rem 2rem; } }
-  .sectionIndex__card .card__image {
-    background-color: #053305;
-    padding: 0.5rem;
-    margin-bottom: 0.5rem; }
-  .sectionIndex__card .card__description {
-    font-size: 1.5rem;
-    padding: 0.3rem;
-    color: #1e4a1e;
-    border: 0.1rem solid #1e4a1e;
-    font-weight: lighter; }
+    font-size: 2.3rem;
+  }
+}
+.sectionIndex__cards {
+  align-items: end;
+  padding: 2rem 0rem 4rem 0rem;
+}
+@media screen and (max-width: 992px) {
+  .sectionIndex__card {
+    padding-bottom: 1.5rem;
+  }
+}
+@media screen and (max-width: 992px) and (max-width: 426px) {
+  .sectionIndex__card {
+    padding: 1rem 2rem;
+  }
+}
+.sectionIndex__card .card__image {
+  background-color: #053305;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.sectionIndex__card .card__description {
+  font-size: 1.5rem;
+  padding: 0.3rem;
+  color: #1e4a1e;
+  border: 0.1rem solid #1e4a1e;
+  font-weight: lighter;
+}
 
 /* Page: Academia - Main Section */
 .academiaMain {
   padding: 5rem 3rem 7rem 3rem;
   background: #d27b11;
-  background: radial-gradient(circle, rgba(210, 123, 17, 0.504937) 34%, rgba(218, 173, 118, 0.633789) 69%, rgba(231, 206, 175, 0.824265) 91%); }
+  background: radial-gradient(
+    circle,
+    rgba(210, 123, 17, 0.504937) 34%,
+    rgba(218, 173, 118, 0.633789) 69%,
+    rgba(231, 206, 175, 0.824265) 91%
+  );
+}
+.academiaMain__text {
+  color: #223522;
+  font-family: "Racing Sans One";
+  font-weight: lighter;
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 3rem;
+  margin-top: 2.5rem;
+}
+@media screen and (max-width: 1024px) {
   .academiaMain__text {
-    color: #223522;
-    font-family: "Racing Sans One";
-    font-weight: lighter;
-    font-size: 1.5rem;
-    text-align: center;
-    line-height: 3rem;
-    margin-top: 2.5rem; }
-    @media screen and (max-width: 1024px) {
-      .academiaMain__text {
-        font-size: 1.3rem;
-        line-height: 2rem; } }
-    @media screen and (max-width: 425px) {
-      .academiaMain__text {
-        font-size: 1.1rem;
-        line-height: 1.5rem; } }
+    font-size: 1.3rem;
+    line-height: 2rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  .academiaMain__text {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+  }
+}
+.academiaMain__image--img {
+  width: 21rem;
+  border: 0.3rem solid rgba(91, 90, 89, 0.474);
+}
+@media screen and (max-width: 768px) {
   .academiaMain__image--img {
-    width: 21rem;
-    border: 0.3rem solid rgba(91, 90, 89, 0.474); }
-    @media screen and (max-width: 768px) {
-      .academiaMain__image--img {
-        width: 12rem;
-        margin-top: 2rem; } }
-    @media screen and (max-width: 425px) {
-      .academiaMain__image--img {
-        width: 10rem; } }
+    width: 12rem;
+    margin-top: 2rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  .academiaMain__image--img {
+    width: 10rem;
+  }
+}
 
 /* Page: Academia - Second Section */
 .section2 {
   padding: 5rem 2rem 8rem 2rem;
   font-family: "Racing Sans One";
   color: #1e4a1e;
-  background: radial-gradient(circle, rgba(242, 224, 202, 0.0847689) 17%, rgba(244, 192, 120, 0.132388) 56%, rgba(241, 201, 145, 0.314461) 96%); }
-  .section2__text {
-    font-size: 1.5rem;
-    line-height: 1.5rem;
-    padding: 0rem 0rem 1.5rem 4rem; }
-  @media screen and (max-width: 1024px) {
-    .section2 {
-      text-align: center;
-      padding: 4rem 0rem; } }
-  @media screen and (max-width: 426px) {
-    .section2 {
-      font-size: 1.1rem;
-      padding: 3rem 0rem;
-      text-align: start; } }
-  @media screen and (max-width: 376px) {
-    .section2 {
-      font-size: 1rem; } }
+  background: radial-gradient(
+    circle,
+    rgba(242, 224, 202, 0.0847689) 17%,
+    rgba(244, 192, 120, 0.132388) 56%,
+    rgba(241, 201, 145, 0.314461) 96%
+  );
+}
+.section2__text {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  padding: 0rem 0rem 1.5rem 4rem;
+}
+@media screen and (max-width: 1024px) {
+  .section2 {
+    text-align: center;
+    padding: 4rem 0rem;
+  }
+}
+@media screen and (max-width: 426px) {
+  .section2 {
+    font-size: 1.1rem;
+    padding: 3rem 0rem;
+    text-align: start;
+  }
+}
+@media screen and (max-width: 376px) {
+  .section2 {
+    font-size: 1rem;
+  }
+}
+.section2__subtitle {
+  font-size: 2.3rem;
+  padding: 1rem 0rem 2rem 7rem;
+}
+@media screen and (max-width: 1024px) {
   .section2__subtitle {
-    font-size: 2.3rem;
-    padding: 1rem 0rem 2rem 7rem; }
-    @media screen and (max-width: 1024px) {
-      .section2__subtitle {
-        text-align: center;
-        padding: 1rem 0rem; } }
-    @media screen and (max-width: 426px) {
-      .section2__subtitle {
-        font-size: 1.7rem; } }
+    text-align: center;
+    padding: 1rem 0rem;
+  }
+}
+@media screen and (max-width: 426px) {
+  .section2__subtitle {
+    font-size: 1.7rem;
+  }
+}
+.section2__carousels {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+@media screen and (max-width: 1024px) {
   .section2__carousels {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly; }
-    @media screen and (max-width: 1024px) {
-      .section2__carousels {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center; } }
-  .section2__carousel, .section2__carousel2 {
-    width: 600px; }
-    @media screen and (max-width: 1024px) {
-      .section2__carousel, .section2__carousel2 {
-        padding: 2rem 0rem; } }
-    @media screen and (max-width: 768px) {
-      .section2__carousel, .section2__carousel2 {
-        max-width: 450px; } }
-    @media screen and (max-width: 426px) {
-      .section2__carousel, .section2__carousel2 {
-        max-width: 350px; } }
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.section2__carousel,
+.section2__carousel2 {
+  width: 600px;
+}
+@media screen and (max-width: 1024px) {
+  .section2__carousel,
+  .section2__carousel2 {
+    padding: 2rem 0rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section2__carousel,
+  .section2__carousel2 {
+    max-width: 450px;
+  }
+}
+@media screen and (max-width: 426px) {
+  .section2__carousel,
+  .section2__carousel2 {
+    max-width: 350px;
+  }
+}
+.section2 .carousel-caption > h5 {
+  padding: 1.5rem;
+  font-family: "Racing Sans One", cursive;
+  color: #1e4a1e;
+  background-color: rgba(245, 199, 113, 0.927);
+}
+@media screen and (max-width: 768px) {
   .section2 .carousel-caption > h5 {
-    padding: 1.5rem;
-    font-family: "Racing Sans One", cursive;
-    color: #1e4a1e;
-    background-color: rgba(245, 199, 113, 0.927); }
-    @media screen and (max-width: 768px) {
-      .section2 .carousel-caption > h5 {
-        padding: 0.5rem 1rem; } }
+    padding: 0.5rem 1rem;
+  }
+}
 
 /* Page: Academia - Third Section */
 .section3 {
@@ -249,150 +353,221 @@
   font-family: "Racing Sans One";
   color: #1e4a1e;
   padding-bottom: 4rem;
-  background: radial-gradient(circle, rgba(242, 224, 202, 0.0847689) 17%, rgba(244, 192, 120, 0.132388) 56%, rgba(241, 201, 145, 0.314461) 96%); }
+  background: radial-gradient(
+    circle,
+    rgba(242, 224, 202, 0.0847689) 17%,
+    rgba(244, 192, 120, 0.132388) 56%,
+    rgba(241, 201, 145, 0.314461) 96%
+  );
+}
+.section3__subtitle {
+  font-size: 2.3rem;
+  padding: 5rem 0rem 4rem 9rem;
+}
+@media screen and (max-width: 1024px) {
   .section3__subtitle {
-    font-size: 2.3rem;
-    padding: 5rem 0rem 4rem 9rem; }
-    @media screen and (max-width: 1024px) {
-      .section3__subtitle {
-        padding: 4rem 0rem;
-        text-align: center; } }
-  .section3__img--container {
-    align-items: flex-end; }
-  .section3__img {
-    width: 250px;
-    border-radius: 2rem; }
-  .section3__img--bigger {
-    width: 260px; }
-  .section3__texts {
-    margin: 1rem 0rem;
-    background: rgba(245, 199, 113, 0.927);
-    padding: 1rem 4rem;
-    border-radius: 1rem; }
-    @media screen and (max-width: 1024px) {
-      .section3__texts {
-        padding: 1rem 3.5rem; } }
-    @media screen and (max-width: 426px) {
-      .section3__texts {
-        margin-bottom: 3.5rem; } }
-    @media screen and (max-width: 376px) {
-      .section3__texts {
-        padding: 0.7rem 2.5rem; } }
-  .section3__text {
-    font-size: 1.2rem;
-    font-weight: lighter;
+    padding: 4rem 0rem;
     text-align: center;
-    padding: 0.1rem 0rem; }
+  }
+}
+.section3__img--container {
+  align-items: flex-end;
+}
+.section3__img {
+  width: 250px;
+  border-radius: 2rem;
+}
+.section3__img--bigger {
+  width: 260px;
+}
+.section3__texts {
+  margin: 1rem 0rem;
+  background: rgba(245, 199, 113, 0.927);
+  padding: 1rem 4rem;
+  border-radius: 1rem;
+}
+@media screen and (max-width: 1024px) {
+  .section3__texts {
+    padding: 1rem 3.5rem;
+  }
+}
+@media screen and (max-width: 426px) {
+  .section3__texts {
+    margin-bottom: 3.5rem;
+  }
+}
+@media screen and (max-width: 376px) {
+  .section3__texts {
+    padding: 0.7rem 2.5rem;
+  }
+}
+.section3__text {
+  font-size: 1.2rem;
+  font-weight: lighter;
+  text-align: center;
+  padding: 0.1rem 0rem;
+}
 
 .sectionSedes {
   font-family: "Racing Sans One";
   color: #1e4a1e;
   padding: 3rem 1rem;
-  background: radial-gradient(circle, rgba(242, 224, 202, 0.0847689) 17%, rgba(244, 192, 120, 0.132388) 56%, rgba(241, 201, 145, 0.314461) 96%); }
-  .sectionSedes__2 {
-    margin-top: -1rem; }
+  background: radial-gradient(
+    circle,
+    rgba(242, 224, 202, 0.0847689) 17%,
+    rgba(244, 192, 120, 0.132388) 56%,
+    rgba(241, 201, 145, 0.314461) 96%
+  );
+}
+.sectionSedes__2 {
+  margin-top: -1rem;
+}
+.sectionSedes__subtitle {
+  text-align: center;
+  padding: 2rem 0rem;
+  font-size: 2rem;
+}
+@media screen and (max-width: 768px) {
   .sectionSedes__subtitle {
-    text-align: center;
-    padding: 2rem 0rem;
-    font-size: 2rem; }
-    @media screen and (max-width: 768px) {
-      .sectionSedes__subtitle {
-        font-size: 1.8rem; } }
+    font-size: 1.8rem;
+  }
+}
+.sectionSedes__mapIcon {
+  width: 6rem;
+  padding-bottom: 1rem;
+}
+@media screen and (max-width: 768px) {
   .sectionSedes__mapIcon {
-    width: 6rem;
-    padding-bottom: 1rem; }
-    @media screen and (max-width: 768px) {
-      .sectionSedes__mapIcon {
-        width: 5rem; } }
+    width: 5rem;
+  }
+}
+.sectionSedes__services {
+  position: relative;
+}
+@media screen and (max-width: 768px) {
   .sectionSedes__services {
-    position: relative; }
-    @media screen and (max-width: 768px) {
-      .sectionSedes__services {
-        width: 100vh; } }
+    width: 100vh;
+  }
+}
+.sectionSedes__servicesImage {
+  border: 0.1rem solid #1e4a1e;
+  margin-top: 2rem;
+}
+@media screen and (max-width: 768px) {
   .sectionSedes__servicesImage {
-    border: 0.1rem solid #1e4a1e;
-    margin-top: 2rem; }
-    @media screen and (max-width: 768px) {
-      .sectionSedes__servicesImage {
-        width: 70vh; } }
+    width: 70vh;
+  }
+}
+.sectionSedes__servicesText {
+  text-decoration: none;
+  color: #1e4a1e;
+  font-size: 1.1rem;
+  text-align: center;
+  padding: 0.7rem 8rem;
+  background-color: rgba(245, 199, 113, 0.927);
+  position: absolute;
+  top: 10rem;
+}
+@media screen and (max-width: 1024px) {
   .sectionSedes__servicesText {
-    text-decoration: none;
-    color: #1e4a1e;
-    font-size: 1.1rem;
-    text-align: center;
-    padding: 0.7rem 8rem;
-    background-color: rgba(245, 199, 113, 0.927);
-    position: absolute;
-    top: 10rem; }
-    @media screen and (max-width: 1024px) {
-      .sectionSedes__servicesText {
-        top: 7rem;
-        padding: 0.5rem 4rem;
-        font-size: 1rem; } }
-    @media screen and (max-width: 768px) {
-      .sectionSedes__servicesText {
-        padding: 0.7rem 9rem;
-        top: 11rem; } }
-    @media screen and (max-width: 426px) {
-      .sectionSedes__servicesText {
-        padding: 0.7rem 6rem;
-        top: 9rem; } }
-    @media screen and (max-width: 376px) {
-      .sectionSedes__servicesText {
-        padding: 0.7rem 5rem;
-        top: 7rem; } }
+    top: 7rem;
+    padding: 0.5rem 4rem;
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .sectionSedes__servicesText {
+    padding: 0.7rem 9rem;
+    top: 11rem;
+  }
+}
+@media screen and (max-width: 426px) {
+  .sectionSedes__servicesText {
+    padding: 0.7rem 6rem;
+    top: 9rem;
+  }
+}
+@media screen and (max-width: 376px) {
+  .sectionSedes__servicesText {
+    padding: 0.7rem 5rem;
+    top: 7rem;
+  }
+}
+.sectionSedes__googleMaps {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 4rem 4rem 1rem 0rem;
+}
+@media screen and (max-width: 768px) {
   .sectionSedes__googleMaps {
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    padding: 4rem 4rem 1rem 0rem; }
-    @media screen and (max-width: 768px) {
-      .sectionSedes__googleMaps {
-        justify-items: center; } }
+    justify-items: center;
+  }
+}
+.sectionSedes__googleMapsIcon {
+  width: 5rem;
+}
+@media screen and (max-width: 768px) {
   .sectionSedes__googleMapsIcon {
-    width: 5rem; }
-    @media screen and (max-width: 768px) {
-      .sectionSedes__googleMapsIcon {
-        width: 3rem; } }
+    width: 3rem;
+  }
+}
+.sectionSedes__googleMapsLink {
+  text-align: center;
+  text-decoration: none;
+  color: #223522;
+  font-size: 1.2rem;
+  padding: 0.6rem;
+  border: 0.1rem solid #1e4a1e;
+  border-radius: 0.5rem;
+}
+@media screen and (max-width: 768px) {
   .sectionSedes__googleMapsLink {
-    text-align: center;
-    text-decoration: none;
-    color: #223522;
-    font-size: 1.2rem;
-    padding: 0.6rem;
-    border: 0.1rem solid #1e4a1e;
-    border-radius: 0.5rem; }
-    @media screen and (max-width: 768px) {
-      .sectionSedes__googleMapsLink {
-        font-size: 1rem;
-        padding: 0.4rem; } }
+    font-size: 1rem;
+    padding: 0.4rem;
+  }
+}
 
 /* Store - Main Section */
 .storeMain {
-  background: radial-gradient(circle, rgba(242, 224, 202, 0.0847689) 17%, rgba(244, 192, 120, 0.132388) 56%, rgba(241, 201, 145, 0.314461) 96%); }
-  .storeMain__cards {
-    padding: 5rem 0rem; }
+  background: radial-gradient(
+    circle,
+    rgba(242, 224, 202, 0.0847689) 17%,
+    rgba(244, 192, 120, 0.132388) 56%,
+    rgba(241, 201, 145, 0.314461) 96%
+  );
+}
+.storeMain__cards {
+  padding: 5rem 0rem;
+}
+.storeMain__card {
+  border: 0.1rem solid #1e4a1e;
+  margin: 0rem 0.2rem;
+}
+@media screen and (max-width: 1024px) {
   .storeMain__card {
-    border: 0.1rem solid #1e4a1e;
-    margin: 0rem 0.2rem; }
-    @media screen and (max-width: 1024px) {
-      .storeMain__card {
-        margin: 1rem 0.1rem; } }
-  .storeMain__card--img {
-    padding: 1rem 1rem 0rem 1rem; }
-  .storeMain__card--body {
-    font-size: 1.5rem;
-    text-align: center;
-    font-family: "Racing Sans One";
-    color: #223522;
-    padding: 2rem 0rem;
-    margin: 1rem;
-    background-color: rgba(245, 199, 113, 0.927); }
-  .storeMain__card--title {
-    padding: 1rem 0rem; }
-  .storeMain__card--btn {
-    color: rgba(245, 199, 113, 0.927);
-    padding: 0.6rem 1.7rem; }
+    margin: 1rem 0.1rem;
+  }
+}
+.storeMain__card--img {
+  padding: 1rem 1rem 0rem 1rem;
+}
+.storeMain__card--body {
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: "Racing Sans One";
+  color: #223522;
+  padding: 2rem 0rem;
+  margin: 1rem;
+  background-color: rgba(245, 199, 113, 0.927);
+}
+.storeMain__card--title {
+  padding: 1rem 0rem;
+}
+.storeMain__card--btn {
+  color: rgba(245, 199, 113, 0.927);
+  padding: 0.6rem 1.7rem;
+}
 
 /* Store - Second Section */
 .storeSecond {
@@ -400,67 +575,93 @@
   position: relative;
   background-image: url("../assets/imagenes/foto_fondo_polvo_ladrillo.jpg");
   background-size: cover;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+}
+.storeSecond__container {
+  font-family: "Racing Sans One";
+  color: rgba(189, 136, 37, 0.916);
+  background-color: rgba(43, 59, 43, 0.749);
+  font-weight: lighter;
+  position: absolute;
+  top: 3.5rem;
+  right: 5rem;
+  max-width: 70vw;
+}
+@media screen and (max-width: 1024px) {
   .storeSecond__container {
-    font-family: "Racing Sans One";
-    color: rgba(189, 136, 37, 0.916);
-    background-color: rgba(43, 59, 43, 0.749);
-    font-weight: lighter;
-    position: absolute;
-    top: 3.5rem;
-    right: 5rem;
-    max-width: 70vw; }
-    @media screen and (max-width: 1024px) {
-      .storeSecond__container {
-        max-width: 55vw;
-        top: 5rem;
-        right: 15rem; } }
-    @media screen and (max-width: 768px) {
-      .storeSecond__container {
-        right: 10rem; } }
-    @media screen and (max-width: 426px) {
-      .storeSecond__container {
-        right: 2.5rem;
-        max-width: 80vw; } }
+    max-width: 55vw;
+    top: 5rem;
+    right: 15rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .storeSecond__container {
+    right: 10rem;
+  }
+}
+@media screen and (max-width: 426px) {
+  .storeSecond__container {
+    right: 2.5rem;
+    max-width: 80vw;
+  }
+}
+.storeSecond__title {
+  font-size: 3.5rem;
+  padding: 3rem 0rem 4rem 0rem;
+  text-align: center;
+}
+@media screen and (max-width: 1024px) {
   .storeSecond__title {
-    font-size: 3.5rem;
-    padding: 3rem 0rem 4rem 0rem;
-    text-align: center; }
-    @media screen and (max-width: 1024px) {
-      .storeSecond__title {
-        padding: 2rem 0rem 3rem 0rem; } }
-    @media screen and (max-width: 768px) {
-      .storeSecond__title {
-        font-size: 3rem;
-        padding: 1.7rem 0rem 2rem 0rem; } }
-    @media screen and (max-width: 426px) {
-      .storeSecond__title {
-        font-size: 2.5rem;
-        padding: 1.7 rem 0rem 1.5rem 0rem; } }
-    @media screen and (max-width: 376px) {
-      .storeSecond__title {
-        font-size: 2.2rem; } }
-  .storeSecond__text {
+    padding: 2rem 0rem 3rem 0rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .storeSecond__title {
+    font-size: 3rem;
+    padding: 1.7rem 0rem 2rem 0rem;
+  }
+}
+@media screen and (max-width: 426px) {
+  .storeSecond__title {
     font-size: 2.5rem;
-    line-height: 3rem;
-    text-align: center;
-    padding: 2rem 5rem; }
-    @media screen and (max-width: 1024px) {
-      .storeSecond__text {
-        padding-bottom: 2rem;
-        line-height: 2.5rem; } }
-    @media screen and (max-width: 768px) {
-      .storeSecond__text {
-        font-size: 2rem;
-        line-height: 2.1rem;
-        padding: 2rem; } }
-    @media screen and (max-width: 426px) {
-      .storeSecond__text {
-        font-size: 1.7rem;
-        line-height: 2rem; } }
-    @media screen and (max-width: 376px) {
-      .storeSecond__text {
-        font-size: 1.5rem; } }
+    padding: 1.7 rem 0rem 1.5rem 0rem;
+  }
+}
+@media screen and (max-width: 376px) {
+  .storeSecond__title {
+    font-size: 2.2rem;
+  }
+}
+.storeSecond__text {
+  font-size: 2.5rem;
+  line-height: 3rem;
+  text-align: center;
+  padding: 2rem 5rem;
+}
+@media screen and (max-width: 1024px) {
+  .storeSecond__text {
+    padding-bottom: 2rem;
+    line-height: 2.5rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .storeSecond__text {
+    font-size: 2rem;
+    line-height: 2.1rem;
+    padding: 2rem;
+  }
+}
+@media screen and (max-width: 426px) {
+  .storeSecond__text {
+    font-size: 1.7rem;
+    line-height: 2rem;
+  }
+}
+@media screen and (max-width: 376px) {
+  .storeSecond__text {
+    font-size: 1.5rem;
+  }
+}
 
 /* Contacto - First Section */
 .contact {
@@ -468,94 +669,134 @@
   display: flex;
   font-family: "Racing Sans One";
   color: #1e4a1e;
-  background: radial-gradient(circle, rgba(242, 224, 202, 0.0847689) 17%, rgba(244, 192, 120, 0.132388) 56%, rgba(241, 201, 145, 0.314461) 96%); }
-  @media screen and (max-width: 1024px) {
-    .contact {
-      display: flex;
-      flex-direction: column;
-      padding: 3rem 0rem 0rem 0rem; } }
+  background: radial-gradient(
+    circle,
+    rgba(242, 224, 202, 0.0847689) 17%,
+    rgba(244, 192, 120, 0.132388) 56%,
+    rgba(241, 201, 145, 0.314461) 96%
+  );
+}
+@media screen and (max-width: 1024px) {
+  .contact {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 0rem 0rem 0rem;
+  }
+}
 
 .contact1 {
   display: flex;
   flex-direction: column;
   padding: 0rem 7rem;
-  margin: 2rem; }
-  @media screen and (max-width: 1024px) {
-    .contact1 {
-      padding: 0rem 12rem; } }
-  @media screen and (max-width: 768px) {
-    .contact1 {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      padding: 2rem 1rem;
-      margin: 0rem; } }
-  @media screen and (max-width: 426px) {
-    .contact1 {
-      display: flex;
-      flex-direction: column;
-      padding: 0rem 1.5rem; } }
-  @media screen and (max-width: 376px) {
-    .contact1 {
-      padding: 0rem; } }
-  .contact1__information1 {
+  margin: 2rem;
+}
+@media screen and (max-width: 1024px) {
+  .contact1 {
+    padding: 0rem 12rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .contact1 {
     display: flex;
-    align-items: center; }
-    @media screen and (max-width: 768px) {
-      .contact1__information1 {
-        margin: 0rem 2rem; } }
+    flex-direction: row;
+    justify-content: center;
+    padding: 2rem 1rem;
+    margin: 0rem;
+  }
+}
+@media screen and (max-width: 426px) {
+  .contact1 {
+    display: flex;
+    flex-direction: column;
+    padding: 0rem 1.5rem;
+  }
+}
+@media screen and (max-width: 376px) {
+  .contact1 {
+    padding: 0rem;
+  }
+}
+.contact1__information1 {
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .contact1__information1 {
+    margin: 0rem 2rem;
+  }
+}
+.contact1__image {
+  width: 5rem;
+  margin: 4rem 5rem;
+}
+@media screen and (max-width: 768px) {
   .contact1__image {
-    width: 5rem;
-    margin: 4rem 5rem; }
-    @media screen and (max-width: 768px) {
-      .contact1__image {
-        width: 2.5rem;
-        margin: 2rem 2rem; } }
+    width: 2.5rem;
+    margin: 2rem 2rem;
+  }
+}
+.contact1__text {
+  font-size: 1.3rem;
+}
+@media screen and (max-width: 768px) {
   .contact1__text {
-    font-size: 1.3rem; }
-    @media screen and (max-width: 768px) {
-      .contact1__text {
-        font-size: 0.9rem; } }
+    font-size: 0.9rem;
+  }
+}
 
 .contact2 {
   background-color: rgba(245, 199, 113, 0.927);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+}
+.contact2__title {
+  font-size: 2.5rem;
+  padding-bottom: 1rem;
+  padding-top: 3rem;
+}
+@media screen and (max-width: 768px) {
   .contact2__title {
-    font-size: 2.5rem;
+    font-size: 1.2rem;
     padding-bottom: 1rem;
-    padding-top: 3rem; }
-    @media screen and (max-width: 768px) {
-      .contact2__title {
-        font-size: 1.2rem;
-        padding-bottom: 1rem; } }
+  }
+}
+.contact2__text {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  padding: 5rem 0rem 2rem 0rem;
+}
+@media screen and (max-width: 768px) {
   .contact2__text {
-    font-size: 1.5rem;
-    line-height: 1.5rem;
-    padding: 5rem 0rem 2rem 0rem; }
-    @media screen and (max-width: 768px) {
-      .contact2__text {
-        font-size: 1rem;
-        line-height: 1rem;
-        padding: 2rem 0rem 1rem 0rem; } }
-  .contact2__icons {
-    display: flex;
-    justify-content: center;
-    align-items: center; }
+    font-size: 1rem;
+    line-height: 1rem;
+    padding: 2rem 0rem 1rem 0rem;
+  }
+}
+.contact2__icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact2__image {
+  width: 5rem;
+  margin: 4rem 3rem;
+}
+@media screen and (max-width: 768px) {
   .contact2__image {
-    width: 5rem;
-    margin: 4rem 3rem; }
-    @media screen and (max-width: 768px) {
-      .contact2__image {
-        width: 2rem;
-        margin: 1.5rem 2rem; } }
+    width: 2rem;
+    margin: 1.5rem 2rem;
+  }
+}
+.contact2__image--bigger {
+  width: 6.2rem;
+}
+@media screen and (max-width: 768px) {
   .contact2__image--bigger {
-    width: 6.2rem; }
-    @media screen and (max-width: 768px) {
-      .contact2__image--bigger {
-        width: 2.5rem; } }
+    width: 2.5rem;
+  }
+}
 
 /* Formulario */
 .form {
@@ -563,85 +804,126 @@
   font-family: "Racing Sans One";
   color: #223522;
   padding: 5rem 9rem;
-  background: radial-gradient(circle, rgba(242, 224, 202, 0.0847689) 17%, rgba(244, 192, 120, 0.132388) 56%, rgba(241, 201, 145, 0.314461) 96%); }
-  @media screen and (max-width: 768px) {
-    .form {
-      padding: 3rem; } }
+  background: radial-gradient(
+    circle,
+    rgba(242, 224, 202, 0.0847689) 17%,
+    rgba(244, 192, 120, 0.132388) 56%,
+    rgba(241, 201, 145, 0.314461) 96%
+  );
+}
+@media screen and (max-width: 768px) {
+  .form {
+    padding: 3rem;
+  }
+}
+.form__legend {
+  font-size: 2rem;
+  text-align: center;
+  padding: 0.5rem 0rem;
+}
+@media screen and (max-width: 425rem) {
   .form__legend {
-    font-size: 2rem;
-    text-align: center;
-    padding: 0.5rem 0rem; }
-    @media screen and (max-width: 425rem) {
-      .form__legend {
-        font-size: 1.5rem; } }
-  .form__data {
-    display: flex;
-    flex-direction: column; }
+    font-size: 1.5rem;
+  }
+}
+.form__data {
+  display: flex;
+  flex-direction: column;
+}
+.form__information {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.1rem;
+  padding: 1rem 4rem;
+}
+@media screen and (max-width: 768rem) {
   .form__information {
-    display: flex;
-    flex-direction: column;
-    font-size: 1.1rem;
-    padding: 1rem 4rem; }
-    @media screen and (max-width: 768rem) {
-      .form__information {
-        padding: 0.7rem 0rem; } }
+    padding: 0.7rem 0rem;
+  }
+}
+.form__writingSpace {
+  margin-left: 0.5rem;
+}
+@media screen and (max-width: 768rem) {
   .form__writingSpace {
-    margin-left: 0.5rem; }
-    @media screen and (max-width: 768rem) {
-      .form__writingSpace {
-        margin-left: 0rem; } }
+    margin-left: 0rem;
+  }
+}
+.form__bottoms {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: "Racing Sans One";
+  color: #223522;
+  padding: 2rem 5rem;
+}
+@media screen and (max-width: 1024px) {
+  .form__bottoms {
+    padding: 2rem 0rem;
+  }
+}
+@media screen and (max-width: 768px) {
   .form__bottoms {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    font-family: "Racing Sans One";
-    color: #223522;
-    padding: 2rem 5rem; }
-    @media screen and (max-width: 1024px) {
-      .form__bottoms {
-        padding: 2rem 0rem; } }
-    @media screen and (max-width: 768px) {
-      .form__bottoms {
-        display: flex;
-        flex-direction: column;
-        padding: 0.5rem 0rem;
-        font-size: 1rem; } }
+    flex-direction: column;
+    padding: 0.5rem 0rem;
+    font-size: 1rem;
+  }
+}
+.form__checkbox {
+  margin-right: 25rem;
+}
+@media screen and (max-width: 1024px) {
   .form__checkbox {
-    margin-right: 25rem; }
-    @media screen and (max-width: 1024px) {
-      .form__checkbox {
-        margin-right: 12rem; } }
-    @media screen and (max-width: 768px) {
-      .form__checkbox {
-        margin-right: 0rem; } }
+    margin-right: 12rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .form__checkbox {
+    margin-right: 0rem;
+  }
+}
+.form__bottom {
+  padding: 0.3rem 1rem;
+  margin: 0rem 1.5rem;
+  border: 0.1rem solid #1e4a1e;
+  border-radius: 0.3rem;
+  background-color: rgba(245, 199, 113, 0.136);
+}
+@media screen and (max-width: 768px) {
   .form__bottom {
-    padding: 0.3rem 1rem;
-    margin: 0rem 1.5rem;
-    border: 0.1rem solid #1e4a1e;
-    border-radius: 0.3rem;
-    background-color: rgba(245, 199, 113, 0.136); }
-    @media screen and (max-width: 768px) {
-      .form__bottom {
-        margin: 0.2rem 0rem; } }
+    margin: 0.2rem 0rem;
+  }
+}
+.form__agreement {
+  padding: 0rem 5rem;
+  font-size: 1.1rem;
+}
+@media screen and (max-width: 425rem) {
   .form__agreement {
-    padding: 0rem 5rem;
-    font-size: 1.1rem; }
-    @media screen and (max-width: 425rem) {
-      .form__agreement {
-        padding: 0rem; } }
+    padding: 0rem;
+  }
+}
+.form__agreementText {
+  font-size: 1.1rem;
+  padding-right: 0.2rem;
+}
+@media screen and (max-width: 1024px) {
   .form__agreementText {
-    font-size: 1.1rem;
-    padding-right: 0.2rem; }
-    @media screen and (max-width: 1024px) {
-      .form__agreementText {
-        font-size: 1rem;
-        padding: 0rem; } }
-    @media screen and (max-width: 768px) {
-      .form__agreementText {
-        margin: 0.5rem 0.2rem; } }
-    @media screen and (max-width: 425rem) {
-      .form__agreementText {
-        margin: 1rem 0.7rem; } }
+    font-size: 1rem;
+    padding: 0rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .form__agreementText {
+    margin: 0.5rem 0.2rem;
+  }
+}
+@media screen and (max-width: 425rem) {
+  .form__agreementText {
+    margin: 1rem 0.7rem;
+  }
+}
 
 .footer {
   display: flex;
@@ -652,45 +934,69 @@
   padding: 2rem 4rem;
   background: #020024;
   background: #002400;
-  background: linear-gradient(90deg, rgba(0, 36, 0, 0.656198) 9%, rgba(14, 97, 5, 0.580567) 41%, rgba(69, 134, 96, 0.577766) 68%, rgba(80, 142, 115, 0.555357) 86%, rgba(95, 140, 115, 0.36208) 98%); }
+  background: linear-gradient(
+    90deg,
+    rgba(0, 36, 0, 0.656198) 9%,
+    rgba(14, 97, 5, 0.580567) 41%,
+    rgba(69, 134, 96, 0.577766) 68%,
+    rgba(80, 142, 115, 0.555357) 86%,
+    rgba(95, 140, 115, 0.36208) 98%
+  );
+}
+.footer__sedes {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+@media screen and (max-width: 1024px) {
   .footer__sedes {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center; }
-    @media screen and (max-width: 1024px) {
-      .footer__sedes {
-        display: none; } }
-  .footer__maps {
-    margin: 0rem 3rem; }
-  .footer__maps--logo {
-    width: 4rem; }
-  .footer__maps--logoText {
-    padding-top: 0.6rem;
-    font-size: 0.8rem; }
-  .footer__maps--text {
-    text-align: center; }
-  .footer__maps--link {
-    height: 4rem;
-    width: 10rem; }
-  .footer__maps--link:hover {
-    height: 5rem;
-    width: 12rem; }
+    display: none;
+  }
+}
+.footer__maps {
+  margin: 0rem 3rem;
+}
+.footer__maps--logo {
+  width: 4rem;
+}
+.footer__maps--logoText {
+  padding-top: 0.6rem;
+  font-size: 0.8rem;
+}
+.footer__maps--text {
+  text-align: center;
+}
+.footer__maps--link {
+  height: 4rem;
+  width: 10rem;
+}
+.footer__maps--link:hover {
+  height: 5rem;
+  width: 12rem;
+}
+.footer__socialMedia {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+@media screen and (max-width: 1024px) {
   .footer__socialMedia {
+    width: 100vw;
+    justify-content: center;
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column; }
-    @media screen and (max-width: 1024px) {
-      .footer__socialMedia {
-        width: 100vw;
-        justify-content: center;
-        display: flex; } }
-  .footer__media--text {
-    font-size: 1rem; }
+  }
+}
+.footer__media--text {
+  font-size: 1rem;
+}
+.footer__media--icon {
+  width: 5rem;
+  padding: 0rem 1.3rem;
+  margin: 1rem 0rem;
+}
+@media screen and (max-width: 425px) {
   .footer__media--icon {
-    width: 5rem;
-    padding: 0rem 1.3rem;
-    margin: 1rem 0rem; }
-    @media screen and (max-width: 425px) {
-      .footer__media--icon {
-        width: 4.3rem; } }
+    width: 4.3rem;
+  }
+}
