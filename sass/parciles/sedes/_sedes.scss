@@ -1,52 +1,97 @@
 .sectionSedes {
-  font-family: "Racing Sans One";
-  color: rgb(34, 53, 34);
-  padding: 1rem;
-}
-
-.sectionSedes__subtitle {
-  text-align: center;
-  padding: 2rem 0rem;
-  font-size: 2rem;
-}
-
-.subtitle__image {
-  width: 6rem;
-  padding-bottom: 1rem;
-}
-
-.services__image {
-  width: 30rem;
-  position: relative;
-  margin-top: 3rem;
-}
-
-.services__text {
-  font-size: 1.1rem;
-  text-align: center;
-  padding: 0.7rem 7rem;
-  margin: 0.5rem 0rem 1rem 0rem;
-  background-color: rgba(246, 194, 96, 0.715);
-  position: absolute;
-}
-
-.sectionSedes__googleMaps {
-  display: flex;
-  justify-content: end;
-  align-items: center;
-  padding: 4rem 4rem 1rem 0rem;
-}
-
-.googleMaps__icon {
-  width: 5rem;
-}
-
-.googleMaps__link {
-  text-align: center;
-  text-decoration: none;
-  color: rgb(34, 53, 34);
-  font-size: 1.2rem;
-  padding: 0.6rem;
-  border: 0.1rem solid rgb(30, 74, 30);
-  border-radius: 0.5rem;
+  font-family: map-get($font, "font1");
+  color: map-get($color, "font");
+  padding: 3rem 1rem;
+  background: radial-gradient(
+    circle,
+    rgba(242, 224, 202, 0.08476894175639005) 17%,
+    rgba(244, 192, 120, 0.13238798937543772) 56%,
+    rgba(241, 201, 145, 0.3144608185070903) 96%
+  );
+  &__2 {
+    margin-top: -1rem;
+  }
+  &__subtitle {
+    text-align: center;
+    padding: 2rem 0rem;
+    font-size: 2rem;
+    @media screen and (max-width: 768px) {
+      font-size: 1.8rem;
+    }
+  }
+  &__mapIcon {
+    width: 6rem;
+    padding-bottom: 1rem;
+    @media screen and (max-width: 768px) {
+      width: 5rem;
+    }
+  }
+  &__services {
+    position: relative;
+    @media screen and (max-width: 768px) {
+      width: 100vh;
+    }
+  }
+  &__servicesImage {
+    border: $border;
+    margin-top: 2rem;
+    @media screen and (max-width: 768px) {
+      width: 70vh;
+    }
+  }
+  &__servicesText {
+    text-decoration: none;
+    color: map-get($color, "font");
+    font-size: 1.1rem;
+    text-align: center;
+    padding: 0.7rem 8rem;
+    background-color: map-get($color, "background2");
+    position: absolute;
+    top: 10rem;
+    @media screen and (max-width: 1024px) {
+      top: 7rem;
+      padding: 0.5rem 4rem;
+      font-size: 1rem;
+    }
+    @media screen and (max-width: 768px) {
+      padding: 0.7rem 9rem;
+      top: 11rem;
+    }
+    @media screen and (max-width: 426px) {
+      padding: 0.7rem 6rem;
+      top: 9rem;
+    }
+    @media screen and (max-width: 376px) {
+      padding: 0.7rem 5rem;
+      top: 7rem;
+    }
+  }
+  &__googleMaps {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 4rem 4rem 1rem 0rem;
+    @media screen and (max-width: 768px) {
+      justify-items: center;
+    }
+  }
+  &__googleMapsIcon {
+    width: 5rem;
+    @media screen and (max-width: 768px) {
+      width: 3rem;
+    }
+  }
+  &__googleMapsLink {
+    text-align: center;
+    text-decoration: none;
+    color: rgb(34, 53, 34);
+    font-size: 1.2rem;
+    padding: 0.6rem;
+    border: 0.1rem solid rgb(30, 74, 30);
+    border-radius: 0.5rem;
+    @media screen and (max-width: 768px) {
+      font-size: 1rem;
+      padding: 0.4rem;
+    }
+  }
 }

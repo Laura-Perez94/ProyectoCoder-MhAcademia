@@ -1,116 +1,108 @@
 /* Contacto - First Section */
-
-.contact__section {
+.contact {
+  padding: 5rem 0rem;
   display: flex;
-  font-family: "Racing Sans One";
-  color: rgb(34, 53, 34);
-  padding: 9rem 0rem 5rem 0rem;
+  font-family: map-get($font, "font1");
+  color: map-get($color, "font");
+  background: radial-gradient(
+    circle,
+    rgba(242, 224, 202, 0.08476894175639005) 17%,
+    rgba(244, 192, 120, 0.13238798937543772) 56%,
+    rgba(241, 201, 145, 0.3144608185070903) 96%
+  );
+  @media screen and (max-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 0rem 0rem 0rem;
+  }
 }
-
-.contact__text {
-  font-size: 1.3rem;
-}
-
-.contact__information {
+.contact1 {
   display: flex;
   flex-direction: column;
-  padding: 0rem 6rem;
+  padding: 0rem 7rem;
   margin: 2rem;
+  @media screen and (max-width: 1024px) {
+    padding: 0rem 12rem;
+  }
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 2rem 1rem;
+    margin: 0rem;
+  }
+  @media screen and (max-width: 426px) {
+    display: flex;
+    flex-direction: column;
+    padding: 0rem 1.5rem;
+  }
+  @media screen and (max-width: 376px) {
+    padding: 0rem;
+  }
+
+  &__information1 {
+    display: flex;
+    align-items: center;
+    @media screen and (max-width: 768px) {
+      margin: 0rem 2rem;
+    }
+  }
+  &__image {
+    width: 5rem;
+    margin: 4rem 5rem;
+    @media screen and (max-width: 768px) {
+      width: 2.5rem;
+      margin: 2rem 2rem;
+    }
+  }
+  &__text {
+    font-size: 1.3rem;
+    @media screen and (max-width: 768px) {
+      font-size: 0.9rem;
+    }
+  }
 }
 
-.contact__information1 {
-  display: flex;
-  align-items: center;
-}
+.contact2 {
+  background-color: map-get($color, "background2");
+  @include flex3;
 
-.contact__image {
-  width: 5rem;
-  margin: 4rem 5rem;
-}
-
-.contact__information2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.contact2__title {
-  font-size: 2.5rem;
-  padding-bottom: 2rem;
-}
-
-.contact2__text {
-  font-size: 1.5rem;
-  line-height: 1.5rem;
-  padding: 5rem 0rem 2rem 0rem;
-}
-.contact2__icons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.contact2__image {
-  width: 5rem;
-  margin: 5rem 3rem;
-}
-
-.contact2__image--bigger {
-  width: 6.2rem;
-}
-
-/* Formulario */
-
-.form {
-  font-family: "Racing Sans One";
-  color: rgb(34, 53, 34);
-  padding: 2rem 9rem;
-}
-
-.form__legend {
-  font-size: 2rem;
-  text-align: center;
-  padding: 0.5rem 0rem;
-}
-
-.form__data {
-  display: flex;
-  flex-direction: column;
-}
-
-.form__information {
-  display: flex;
-  flex-direction: column;
-  font-size: 1.1rem;
-  padding: 1rem 4rem;
-}
-
-.form__writingSpace {
-  margin-left: 0.5rem;
-}
-
-.form__bottoms {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  font-family: "Racing Sans One";
-  color: rgb(34, 53, 34);
-  padding: 2rem 5rem;
-}
-
-.form__bottom {
-  padding: 0.3rem 1rem;
-  margin: 0rem 1rem;
-  border-radius: 0.3rem;
-}
-
-.agreement__text {
-  font-size: 1.1rem;
-  padding-right: 1rem;
-}
-
-.form__agreement {
-  padding: 0rem 5rem;
-  font-size: 1.1rem;
+  &__title {
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
+    padding-top: 3rem;
+    @media screen and (max-width: 768px) {
+      font-size: 1.2rem;
+      padding-bottom: 1rem;
+    }
+  }
+  &__text {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    padding: 5rem 0rem 2rem 0rem;
+    @media screen and (max-width: 768px) {
+      font-size: 1rem;
+      line-height: 1rem;
+      padding: 2rem 0rem 1rem 0rem;
+    }
+  }
+  &__icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__image {
+    width: 5rem;
+    margin: 4rem 3rem;
+    @media screen and (max-width: 768px) {
+      width: 2rem;
+      margin: 1.5rem 2rem;
+    }
+  }
+  &__image--bigger {
+    width: 6.2rem;
+    @media screen and (max-width: 768px) {
+      width: 2.5rem;
+    }
+  }
 }

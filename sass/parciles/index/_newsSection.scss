@@ -1,7 +1,4 @@
 .sectionIndex {
-  color: map-get($color, "font");
-  font-family: map-get($font, "font2");
-  text-align: center;
   background: rgb(241, 214, 182);
   background: rgb(242, 224, 202);
   background: radial-gradient(
@@ -10,11 +7,17 @@
     rgba(244, 192, 120, 0.13238798937543772) 56%,
     rgba(241, 201, 145, 0.3144608185070903) 96%
   );
+  color: map-get($color, "font");
+  font-family: map-get($font, "font1");
+  text-align: center;
   &__subtitle {
     font-size: 2.5rem;
     padding: 4rem 0rem;
     font-weight: lighter;
     text-transform: uppercase;
+    @media screen and (max-width: 768px) {
+      font-size: 2.3rem;
+    }
   }
   &__cards {
     align-items: end;
@@ -23,6 +26,9 @@
   &__card {
     @media screen and (max-width: 992px) {
       padding-bottom: 1.5rem;
+      @media screen and (max-width: 426px) {
+        padding: 1rem 2rem;
+      }
     }
     .card__image {
       background-color: map-get($color, "background");

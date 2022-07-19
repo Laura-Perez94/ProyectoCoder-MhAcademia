@@ -1,0 +1,39 @@
+/* Store - Main Section */
+
+.storeMain {
+  background: radial-gradient(
+    circle,
+    rgba(242, 224, 202, 0.08476894175639005) 17%,
+    rgba(244, 192, 120, 0.13238798937543772) 56%,
+    rgba(241, 201, 145, 0.3144608185070903) 96%
+  );
+  &__cards {
+    padding: 5rem 0rem;
+  }
+  &__card {
+    border: $border;
+    margin: 0rem 0.2rem;
+    @media screen and (max-width: 1024px) {
+      margin: 1rem 0.1rem;
+    }
+  }
+  &__card--img {
+    padding: 1rem 1rem 0rem 1rem;
+  }
+  &__card--body {
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: "Racing Sans One";
+    color: rgb(34, 53, 34);
+    padding: 2rem 0rem;
+    margin: 1rem;
+    background-color: map-get($color, background2);
+  }
+  &__card--title {
+    padding: 1rem 0rem;
+  }
+  &__card--btn {
+    color: map-get($color, "background2");
+    padding: 0.6rem 1.7rem;
+  }
+}

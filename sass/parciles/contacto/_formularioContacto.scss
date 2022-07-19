@@ -1,0 +1,102 @@
+/* Formulario */
+
+.form {
+  margin-top: -1rem;
+  font-family: "Racing Sans One";
+  color: rgb(34, 53, 34);
+  padding: 5rem 9rem;
+  background: radial-gradient(
+    circle,
+    rgba(242, 224, 202, 0.08476894175639005) 17%,
+    rgba(244, 192, 120, 0.13238798937543772) 56%,
+    rgba(241, 201, 145, 0.3144608185070903) 96%
+  );
+  @media screen and (max-width: 768px) {
+    padding: 3rem;
+  }
+
+  &__legend {
+    font-size: 2rem;
+    text-align: center;
+    padding: 0.5rem 0rem;
+    @media screen and (max-width: 425rem) {
+      font-size: 1.5rem;
+    }
+  }
+  &__data {
+    display: flex;
+    flex-direction: column;
+  }
+  &__information {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.1rem;
+    padding: 1rem 4rem;
+    @media screen and (max-width: 768rem) {
+      padding: 0.7rem 0rem;
+    }
+  }
+  &__writingSpace {
+    margin-left: 0.5rem;
+    @media screen and (max-width: 768rem) {
+      margin-left: 0rem;
+    }
+  }
+  &__bottoms {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: "Racing Sans One";
+    color: rgb(34, 53, 34);
+    padding: 2rem 5rem;
+    @media screen and (max-width: 1024px) {
+      padding: 2rem 0rem;
+    }
+    @media screen and (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      padding: 0.5rem 0rem;
+      font-size: 1rem;
+    }
+  }
+  &__checkbox {
+    margin-right: 25rem;
+    @media screen and (max-width: 1024px) {
+      margin-right: 12rem;
+    }
+    @media screen and (max-width: 768px) {
+      margin-right: 0rem;
+    }
+  }
+  &__bottom {
+    padding: 0.3rem 1rem;
+    margin: 0rem 1.5rem;
+    border: $border;
+    border-radius: 0.3rem;
+    background-color: rgba(245, 199, 113, 0.136);
+    @media screen and (max-width: 768px) {
+      margin: 0.2rem 0rem;
+    }
+  }
+  &__agreement {
+    padding: 0rem 5rem;
+    font-size: 1.1rem;
+    @media screen and (max-width: 425rem) {
+      padding: 0rem;
+    }
+  }
+  &__agreementText {
+    font-size: 1.1rem;
+    padding-right: 0.2rem;
+    @media screen and (max-width: 1024px) {
+      font-size: 1rem;
+      padding: 0rem;
+    }
+    @media screen and (max-width: 768px) {
+      margin: 0.5rem 0.2rem;
+    }
+    @media screen and (max-width: 425rem) {
+      margin: 1rem 0.7rem;
+    }
+  }
+}

@@ -1,7 +1,7 @@
 /* Page: Academia - Second Section */
 
 .section2 {
-  padding: 5rem 2rem;
+  padding: 5rem 2rem 8rem 2rem;
   font-family: map-get($font, "font1");
   color: map-get($color, "font");
   background: radial-gradient(
@@ -10,69 +10,69 @@
     rgba(244, 192, 120, 0.13238798937543772) 56%,
     rgba(241, 201, 145, 0.3144608185070903) 96%
   );
+
   &__text {
     font-size: 1.5rem;
     line-height: 1.5rem;
     padding: 0rem 0rem 1.5rem 4rem;
   }
+  @media screen and (max-width: 1024px) {
+    text-align: center;
+    padding: 4rem 0rem;
+  }
+  @media screen and (max-width: 426px) {
+    font-size: 1.1rem;
+    padding: 3rem 0rem;
+    text-align: start;
+  }
+  @media screen and (max-width: 376px) {
+    font-size: 1rem;
+  }
+
   &__subtitle {
     font-size: 2.3rem;
     padding: 1rem 0rem 2rem 7rem;
-    @media screen and (max-width: 425px) {
-      font-size: 2.1rem;
-      padding: 1rem 0rem 2rem 3rem;
+    @media screen and (max-width: 1024px) {
+      text-align: center;
+      padding: 1rem 0rem;
+    }
+    @media screen and (max-width: 426px) {
+      font-size: 1.7rem;
     }
   }
-  &__cards {
-    justify-content: space-around;
-    margin-bottom: 2rem;
+  &__carousels {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    @media screen and (max-width: 1024px) {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
   }
-  &__card1 {
-    position: relative;
-    @include flex2;
-    padding: 1rem 0rem;
-    max-width: 500px;
+  &__carousel {
+    width: 600px;
+    @media screen and (max-width: 1024px) {
+      padding: 2rem 0rem;
+    }
     @media screen and (max-width: 768px) {
-      max-width: 400px;
+      max-width: 450px;
     }
-    @media screen and (max-width: 425px) {
-      max-width: 400px;
+    @media screen and (max-width: 426px) {
+      max-width: 350px;
     }
+  }
+  &__carousel2 {
+    @extend .section2__carousel;
   }
 
-  &__card1--text {
-    font-size: 1.2rem;
-    font-weight: lighter;
-    text-align: center;
-    background-color: rgba(245, 199, 113, 0.927);
-    margin-top: 0.5rem;
-    padding: 1rem 10.7rem;
-    margin-top: 0.5rem;
-    position: absolute;
-    top: 21rem;
+  .carousel-caption > h5 {
+    padding: 1.5rem;
+    font-family: map-get($font, "font1"), cursive;
+    color: map-get($color, "font");
+    background-color: map-get($color, "background2");
     @media screen and (max-width: 768px) {
-      font-size: 1rem;
-      padding: 0.7rem 8.4rem;
-      top: 14rem;
-    }
-    @media screen and (max-width: 425px) {
-      padding: 0.7rem 6.9rem;
-      top: 10rem;
-    }
-  }
-
-  &__card2 {
-    @extend .section2__card1;
-  }
-
-  &__card2--text {
-    @extend .section2__card1--text;
-    padding: 1rem 10.9rem;
-    @media screen and (max-width: 768px) {
-      padding: 0.7rem 8.5rem;
-    }
-    @media screen and (max-width: 425px) {
-      padding: 0.7rem 7rem;
+      padding: 0.5rem 1rem;
     }
   }
 }
