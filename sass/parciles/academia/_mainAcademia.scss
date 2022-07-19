@@ -1,6 +1,7 @@
 /* Page: Academia - Main Section */
 
 .academiaMain {
+  padding: 5rem 3rem 7rem 3rem;
   background: rgb(210, 123, 17);
   background: radial-gradient(
     circle,
@@ -8,7 +9,6 @@
     rgba(218, 173, 118, 0.6337885495995272) 69%,
     rgba(231, 206, 175, 0.8242647400757178) 91%
   );
-  padding: 5rem;
 
   &__text {
     color: rgb(34, 53, 34);
@@ -18,9 +18,24 @@
     text-align: center;
     line-height: 3rem;
     margin-top: 2.5rem;
+    @media screen and (max-width: 1024px) {
+      font-size: 1.3rem;
+      line-height: 2rem;
+    }
+    @media screen and (max-width: 425px) {
+      font-size: 1.1rem;
+      line-height: 1.5rem;
+    }
   }
   &__image--img {
     width: 21rem;
     border: 0.3rem solid rgba(91, 90, 89, 0.474);
+    @media screen and (max-width: 768px) {
+      width: 12rem;
+      margin-top: 2rem;
+    }
+    @media screen and (max-width: 425px) {
+      width: 10rem;
+    }
   }
 }

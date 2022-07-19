@@ -110,28 +110,28 @@
     </header>
 
     <!-- Section -->
-    <section class="contact__section">
-      <div class="contact__information">
-        <div class="contact__information1">
+    <section class="contact">
+      <div class="contact1">
+        <div class="contact1__information1">
           <img
-            class="contact__image"
+            class="contact1__image"
             src="../../assets/iconos/phone.png"
             alt="iconoTelefono"
           />
-          <p class="contact__text">+54 351000000</p>
+          <p class="contact1__text">+54 351000000</p>
         </div>
 
-        <div class="contact__information1">
+        <div class="contact1__information1">
           <img
-            class="contact__image"
+            class="contact1__image"
             src="../../assets/iconos/email.png"
             alt="iconoMail"
           />
-          <p class="contact__text">info@mhacademia.Com</p>
+          <p class="contact1__text">info@mhacademia.Com</p>
         </div>
       </div>
 
-      <div class="contact__information2">
+      <div class="contact2">
         <h3 class="contact2__title">Social Media</h3>
         <p class="contact2__text">Encontranos también en nuestras redes</p>
         <div class="contact2__icons">
@@ -153,8 +153,6 @@
         </div>
       </div>
     </section>
-
-    <hr />
 
     <!-- Formulario -->
     <form class="form" action="" method="get">
@@ -212,10 +210,15 @@
 
         <div class="form__bottoms">
           <div class="form__agreement">
-            <label class="agreement__text" for="agree"
+            <label class="form__agreementText" for="agree"
               >Acepta la politica de privacidad</label
             >
-            <input type="checkbox" id="agree" name="agreement" />
+            <input
+              type="checkbox"
+              id="agree"
+              class="form__checkbox"
+              name="agreement"
+            />
           </div>
           <input class="form__bottom" type="reset" value="Borrar" />
           <input class="form__bottom" type="submit" value="Enviar" />

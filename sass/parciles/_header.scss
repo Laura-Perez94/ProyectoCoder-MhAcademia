@@ -11,16 +11,21 @@
         font-family: map-get($font, "font1"), cursive;
         color: map-get($color, "font");
         padding: 1rem;
+        font-size: 1rem;
         img {
           margin-right: 1rem;
-          font-size: 1.2rem;
         }
       }
+      &-toggler {
+        border: $border;
+      }
+
       #navbarNav {
         justify-content: end;
         padding-right: 1rem;
         font-family: map-get($font, "font1"), cursive;
         .navbar-nav {
+          text-align: center;
           .nav-item {
             padding: 0.5rem 0.5rem;
             margin: 0rem 1rem;
@@ -59,7 +64,7 @@
         padding: 2rem 2rem;
         top: 25rem;
       }
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 767px) {
         display: none;
       }
     }
